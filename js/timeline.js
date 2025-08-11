@@ -5,13 +5,13 @@ points.forEach(point => {
     point.addEventListener('mouseenter', (e) => {
         tooltip.textContent = point.dataset.title;
         tooltip.style.left = e.pageX + 'px';
-        tooltip.style.top = (e.pageY - 30) + 'px';
+        tooltip.style.top = (e.pageY - 20) + 'px';
         tooltip.classList.add('show');
     });
 
     point.addEventListener('mousemove', (e) => {
         tooltip.style.left = e.pageX + 'px';
-        tooltip.style.top = (e.pageY - 30) + 'px';
+        tooltip.style.top = (e.pageY - 20) + 'px';
     });
 
     point.addEventListener('mouseleave', () => {

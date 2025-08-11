@@ -185,9 +185,75 @@ h1 {
   height: 100%;
 }
 
+.slider-section {
+    position: relative;
+    background: #222;
+    height: 100vh;
+}
+
+.slider-header {
+    position: absolute;
+    top: 50px;
+    left: 1%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos la timeline */
+    z-index: 100;
+}
+
+/* Logo alineado a la izquierda */
+.logo {
+    position: absolute;
+    left: 20px;
+}
+.logo img {
+    width: 150px;
+}
+
+/* Timeline centrada con menos largo */
+.timeline {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5); /* Transparente con 50% opacidad */
+    border-radius: 2px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.timeline-point {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5); /* Nodo transparente */
+    border: 2px solid white; /* Borde blanco para visibilidad */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.timeline-point:hover {
+    background: rgba(0, 184, 148, 0.7); /* Verde con transparencia al hover */
+}
 
 
-
-
-
-
+/* Tooltip */
+.tooltip {
+    position: fixed; /* que siga el mouse */
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    z-index: 2000;
+}
+.tooltip.show {
+    opacity: 1;
+    transform: translateY(-20px);
+}
