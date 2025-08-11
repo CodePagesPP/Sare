@@ -1,6 +1,4 @@
-// sorry for the spaghetti code and redundant variables, i wasn't exactly a good coder back then
 
-const cols = 3;
 const main = document.getElementById('main');
 let parts = [];
 
@@ -16,19 +14,63 @@ for (let i in images) {
   new Image().src = images[i];
 }
 
-for (let col = 0; col < cols; col++) {
-  let part = document.createElement('div');
-  part.className = 'part';
-  let el = document.createElement('div');
-  el.className = "section";
-  let img = document.createElement('img');
-  img.src = images[current];
-  el.appendChild(img);
-  part.style.setProperty('--x', -100/cols*col+'vw');
-  part.appendChild(el);
-  main.appendChild(part);
-  parts.push(part);
+function createPartsForCurrent() {
+  main.innerHTML = ''; 
+  parts = [];
+
+  if (current % 2 === 0) {
+    // 3 columnas verticales
+    const cols = 3;
+    main.style.display = 'flex';
+    main.style.flexDirection = 'row';
+    for (let col = 0; col < cols; col++) {
+      let part = document.createElement('div');
+      part.className = 'part';
+
+      let el = document.createElement('div');
+      el.className = "section";
+
+      let img = document.createElement('img');
+      img.src = images[current];
+
+      el.appendChild(img);
+      part.style.setProperty('--x', (-100 / cols * col) + 'vw');
+      part.style.setProperty('--y', '0');
+      part.style.flex = '1';
+
+      part.appendChild(el);
+      main.appendChild(part);
+      parts.push(part);
+    }
+  } else {
+    // 2 filas horizontales
+    const rows = 2;
+    main.style.display = 'flex';
+    main.style.flexDirection = 'column';
+
+    for (let row = 0; row < rows; row++) {
+      let part = document.createElement('div');
+      part.className = 'part';
+
+      let el = document.createElement('div');
+      el.className = "section";
+
+      let img = document.createElement('img');
+      img.src = images[current];
+
+      el.appendChild(img);
+      part.style.setProperty('--x', '0');
+      part.style.setProperty('--y', (-100 / rows * row) + 'vh');
+      part.style.flex = '1';
+
+      part.appendChild(el);
+      main.appendChild(part);
+      parts.push(part);
+    }
+  }
 }
+
+createPartsForCurrent();
 
 let animOptions = {
   duration: 2.3,
@@ -36,52 +78,80 @@ let animOptions = {
 };
 
 function go(dir) {
-  if (!playing) {
-    playing = true;
-    if (current + dir < 0) current = images.length - 1;
-    else if (current + dir >= images.length) current = 0;
-    else current += dir;
+  if (playing) return;
+  playing = true;
 
-    function up(part, next) {
-      part.appendChild(next);
-      gsap.to(part, {...animOptions, y: -window.innerHeight}).then(function () {
-        part.children[0].remove();
-        gsap.to(part, {duration: 0, y: 0});
-      })
-    }
+  let nextIndex;
+  if (current + dir < 0) nextIndex = images.length - 1;
+  else if (current + dir >= images.length) nextIndex = 0;
+  else nextIndex = current + dir;
 
-    function down(part, next) {
-      part.prepend(next);
-      gsap.to(part, {duration: 0, y: -window.innerHeight});
-      gsap.to(part, {...animOptions, y: 0}).then(function () {
-        part.children[1].remove();
-        playing = false;
-      })
-    }
+  let changePattern = (current % 2) !== (nextIndex % 2);
+  let completedAnimations = 0;
 
-    for (let p in parts) {
-      let part = parts[p];
-      let next = document.createElement('div');
-      next.className = 'section';
-      let img = document.createElement('img');
-      img.src = images[current];
-      next.appendChild(img);
+  for (let p in parts) {
+    let part = parts[p];
+    let currentSection = part.querySelector('.section');
+    
+   
+    let nextSection = document.createElement('div');
+    nextSection.className = 'section';
+    let img = document.createElement('img');
+    img.src = images[nextIndex];
+    nextSection.appendChild(img);
+    part.appendChild(nextSection);
 
-      if ((p - Math.max(0, dir)) % 2) {
-        down(part, next);
-      } else {
-        up(part, next);
-      }
+    if (current % 2 === 0) {
+      // Columnas → animación vertical
+      let fromYNext = (p % 2) ? '-100%' : '100%';
+      let toYCurrent = (p % 2) ? '100%' : '-100%';
+
+      gsap.fromTo(nextSection, { y: fromYNext }, { 
+        y: '0%', 
+        ...animOptions 
+      });
+      gsap.to(currentSection, { 
+        y: toYCurrent, 
+        ...animOptions, 
+        onComplete: () => {
+          currentSection.remove();
+          if (++completedAnimations === parts.length) {
+            current = nextIndex;
+            if (changePattern) createPartsForCurrent();
+            playing = false;
+          }
+        }
+      });
+    } else {
+      // Filas → animación horizontal
+      let fromXNext = (p % 2) ? '-100%' : '100%';
+      let toXCurrent = (p % 2) ? '100%' : '-100%';
+
+      gsap.fromTo(nextSection, { x: fromXNext }, { 
+        x: '0%', 
+        ...animOptions 
+      });
+      gsap.to(currentSection, { 
+        x: toXCurrent, 
+        ...animOptions, 
+        onComplete: () => {
+          currentSection.remove();
+          if (++completedAnimations === parts.length) {
+            current = nextIndex;
+            if (changePattern) createPartsForCurrent();
+            playing = false;
+          }
+        }
+      });
     }
   }
 }
 
-window.addEventListener('keydown', function(e) {
+
+window.addEventListener('keydown', function (e) {
   if (['ArrowDown', 'ArrowRight'].includes(e.key)) {
     go(1);
-  }
-
-  else if (['ArrowUp', 'ArrowLeft'].includes(e.key)) {
+  } else if (['ArrowUp', 'ArrowLeft'].includes(e.key)) {
     go(-1);
   }
 });
