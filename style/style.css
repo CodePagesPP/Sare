@@ -1,9 +1,28 @@
+:root{
+  --principal1: rgb(05  77 97);
+  --principal2:#049990;
+  --white:#EDEDED;
+  --black:#000000;
+  --orange:#EB5B27;
+  --sky:#0871B8;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url(../fonts/Mont-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Designer';
+  src: url(../fonts/DESIGNER.otf);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: "Sen";
+  font-family: "Designer";
 }
 
 * {
@@ -148,3 +167,21 @@ h1 {
     }
   }
 }
+
+.part.row{
+  height: calc(100%/2);
+  width: 100%
+}
+
+.part.col{
+  float: left;
+  width: calc(100%/3);
+  height: 100%;
+}
+
+
+
+
+
+
+
