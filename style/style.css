@@ -137,43 +137,6 @@ h1 {
   pointer-events: none;
 }
 
-.content {
-  width: 90%;
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  left: 0;
-  right: 0;
-  margin: auto;
-  color: white;
-  z-index: 99;
-  font-size: 0.8em;
-
-  p {
-    margin: 0.5em auto;
-  }
-
-  kbd {
-    width: 15px;
-    height: 15px;
-    border: 1px solid white;
-    display: inline-block;
-    border-radius: 3px;
-    font-size: 0.9em;
-    vertical-align: text-top;
-  }
-
-  a {
-    color: rgba(227, 227, 227, 0.78);
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-
-    &:hover {
-      padding-bottom: 1px;
-    }
-  }
-}
-
 .part.row{
   height: calc(100%/2);
   width: 100%
@@ -253,7 +216,75 @@ h1 {
     white-space: nowrap;
     z-index: 2000;
 }
+
 .tooltip.show {
     opacity: 1;
     transform: translateY(-20px);
+}
+
+/* Contenedor general abajo a la derecha */
+.social-container {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 100;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.social:hover {
+    transform: translateY(-4px) scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Colores personalizados por red */
+.social.ig:hover { color: #E1306C; }
+.social.fb:hover { color: #1877F2; }
+.social.li:hover { color: #0077B5; }
+
+/* Slogan animado */
+.slogan {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 14px;
+    animation: fadeSlide 2s ease-in-out infinite alternate;
+}
+
+.slogan i {
+    color: #FFD700; /* Icono dorado */
+    animation: pulse 1.5s infinite;
+}
+
+/* Animaciones */
+@keyframes fadeSlide {
+    0% { opacity: 0.5; transform: translateX(5px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }

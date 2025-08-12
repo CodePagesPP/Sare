@@ -3,10 +3,10 @@ const main = document.getElementById('main');
 let parts = [];
 
 let images = [
-  "./assets/portada1.png",
-  "./assets/portada2.png",
-  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "./assets/portada3.png"
+  "./assets/color1.png",
+  "./assets/color2.png",
+  "./assets/color3.png",
+  "./assets/color5.png"
 ];
 let current = 0;
 let playing = false;
