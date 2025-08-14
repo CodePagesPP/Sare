@@ -88,6 +88,24 @@ main { padding-top: 90px; }
   }
 }
 
+@keyframes fadeUpStrong {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.85);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-up-strong {
+  animation: fadeUpStrong 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
 
 .scroll-jacking {
   position: relative;
