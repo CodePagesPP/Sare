@@ -28,7 +28,7 @@ html{
 .footer {
     background-color: var(--black);
     color: var(--white);
-    padding: 20px;
+    padding: 50px;
     font-family: Arial, sans-serif;
 }
 
@@ -49,6 +49,10 @@ html{
     max-width: 120px;
 }
 
+#logo-inferior{
+  align-items: center;
+}
+
 .footer-logo {
     max-width: 20px;
 }
@@ -56,6 +60,11 @@ html{
 .footer-col ul {
     list-style: none;
     padding: 0;
+}
+
+.footer-col ul li{
+    
+    padding-bottom: 10px;
 }
 
 .footer-col ul li a {
@@ -85,7 +94,14 @@ html{
     border-radius: 4px;
 }
 
+#row-1{
+  margin-bottom: 60px;
+}
 
+#row-2{
+      border-top: 1px solid white;
+    padding: 20px;
+}
 .social a i {
   color: var(--white);
     width: 25px;
@@ -95,6 +111,7 @@ html{
 #redes{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 
