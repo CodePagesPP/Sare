@@ -1,3 +1,4 @@
+@media screen and (max-width:991px){.w-container{max-width:728px}.w-hidden-main{display:inherit !important}.w-hidden-medium{display:none !important}.w-col-medium-1{width:8.33333333%}.w-col-medium-2{width:16.66666667%}.w-col-medium-3{width:25%}.w-col-medium-4{width:33.33333333%}.w-col-medium-5{width:41.66666667%}.w-col-medium-6{width:50%}.w-col-medium-7{width:58.33333333%}.w-col-medium-8{width:66.66666667%}.w-col-medium-9{width:75%}.w-col-medium-10{width:83.33333333%}.w-col-medium-11{width:91.66666667%}.w-col-medium-12{width:100%}.w-col-stack{width:100%;left:auto;right:auto}}@media screen and (max-width:767px){.w-hidden-main{display:inherit !important}.w-hidden-medium{display:inherit !important}.w-hidden-small{display:none !important}.w-row,.w-container .w-row{margin-left:0;margin-right:0}.w-col{width:100%;left:auto;right:auto}.w-col-small-1{width:8.33333333%}.w-col-small-2{width:16.66666667%}.w-col-small-3{width:25%}.w-col-small-4{width:33.33333333%}.w-col-small-5{width:41.66666667%}.w-col-small-6{width:50%}.w-col-small-7{width:58.33333333%}.w-col-small-8{width:66.66666667%}.w-col-small-9{width:75%}.w-col-small-10{width:83.33333333%}.w-col-small-11{width:91.66666667%}.w-col-small-12{width:100%}}@media screen and (max-width:479px){.w-container{max-width:none}.w-hidden-main{display:inherit !important}.w-hidden-medium{display:inherit !important}.w-hidden-small{display:inherit !important}.w-hidden-tiny{display:none !important}.w-col{width:100%}.w-col-tiny-1{width:8.33333333%}.w-col-tiny-2{width:16.66666667%}.w-col-tiny-3{width:25%}.w-col-tiny-4{width:33.33333333%}.w-col-tiny-5{width:41.66666667%}.w-col-tiny-6{width:50%}.w-col-tiny-7{width:58.33333333%}.w-col-tiny-8{width:66.66666667%}.w-col-tiny-9{width:75%}.w-col-tiny-10{width:83.33333333%}.w-col-tiny-11{width:91.66666667%}.w-col-tiny-12{width:100%}}@media screen and (max-width:767px){.w-nav-brand{padding-left:10px}}@media (min-width:768px){.w-lightbox-content{height:96vh;margin-top:2vh}.w-lightbox-view,.w-lightbox-view:before{height:96vh}.w-lightbox-group,.w-lightbox-group .w-lightbox-view,.w-lightbox-group .w-lightbox-view:before{height:84vh}.w-lightbox-image{max-width:96vw;max-height:96vh}.w-lightbox-group .w-lightbox-image{max-width:82.3vw;max-height:84vh}.w-lightbox-left,.w-lightbox-right{display:block;opacity:.5}.w-lightbox-close{opacity:.8}.w-lightbox-control:hover{opacity:1}}@media screen and (max-width:991px){.w-nav[data-collapse="medium"] .w-nav-menu{display:none}.w-nav[data-collapse="medium"] .w-nav-button{display:block}}@media screen and (max-width:767px){.w-nav[data-collapse="small"] .w-nav-menu{display:none}.w-nav[data-collapse="small"] .w-nav-button{display:block}.w-nav-brand{padding-left:10px}}@media screen and (max-width:479px){.w-nav[data-collapse="tiny"] .w-nav-menu{display:none}.w-nav[data-collapse="tiny"] .w-nav-button{display:block}}@media screen and (max-width:479px){.w-tab-link{display:block}}
 
 
 .w-checkbox {
@@ -63,13 +64,29 @@
   border-top-right-radius: 2px;
 }
 
-
+.w-checkbox-input--inputType-custom.w--redirected-checked {
+  background-color: #3898ec;
+  border-top-color: #3898ec;
+  border-bottom-color: #3898ec;
+  border-left-color: #3898ec;
+  border-right-color: #3898ec;
+  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .w-checkbox-input--inputType-custom.w--redirected-focus {
   box-shadow: 0px 0px 3px 1px #3898ec;
 }
 
+#contact {
 
+
+  font-size: 1vw;
+  line-height: 20px;
+  font-weight: 500;
+}
 
 .line-terms {
   height: 1px;
@@ -190,7 +207,7 @@
   bottom: 0%;
   z-index: 0;
   width: 100%;
-  height: 100%;
+  height: 91%;
   opacity: 0.5;
   -o-object-fit: fill;
   object-fit: fill;
@@ -218,7 +235,6 @@
 
 .grid.is--final-coypright {
   z-index: 1;
-  padding-top: 7em;
   align-items: center;
 }
 
@@ -250,7 +266,7 @@
 }
 
 .container.footer {
-  padding: 4em 12em 0em;
+  padding: 4em 12em 4em;
 }
 
 .checkbox-field {
@@ -298,10 +314,9 @@
   right: 0%;
   bottom: 0%;
   z-index: 1;
-  display: block;
+  display: none;
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(0deg, #00000b, rgba(0, 0, 11, 0.3) 50%, #00000b);
+  height: 110%;
 }
 
 .section {
@@ -316,7 +331,9 @@
   bottom: 0px;
   z-index: 1;
   overflow: visible;
-  background-color: #00000b;
+  background: url(https://assets.website-files.com/6170167a7b5ce6345a462c55/61869c8836829ab3793d2e01_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text-field {
@@ -392,7 +409,7 @@
 
 .div-block-12 {
   position: relative;
-  padding-bottom: 10em;
+  padding-bottom: 8em;
 }
 
 .submit-button {
@@ -406,6 +423,8 @@
   height: 42px;
   font-size: 16px;
   font-weight: 300;
+  background-color: #054D61;
+  color: white;
 }
 
 .form-block {
