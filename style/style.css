@@ -25,6 +25,79 @@ html{
     
 }
 
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo-superior img{
+    max-width: 120px;
+}
+
+.footer-logo {
+    max-width: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-col form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col form input {
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-col form button {
+    padding: 6px;
+    background: var(--principal1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.social a i {
+  color: var(--white);
+    width: 25px;
+    margin-right: 8px;
+}
+
+#redes{
+  display: flex;
+  flex-direction: row;
+}
+
+
 body{margin:0,
 
 }
