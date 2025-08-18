@@ -753,7 +753,7 @@ textarea.w-input,textarea.w-select{height:auto}
   
   .title4{font-size:1.75em;font-weight:600;line-height:1.2em}
   
-  .copy-medium{font-size:1.3em;font-weight:400;line-height:1.45em}
+  
   
   .rich-text-custom h1{margin-top:2em;margin-bottom:.4em}
   
@@ -890,7 +890,47 @@ font-size: 40px;}
 
 .text-semibold{font-weight:600}
 
-.cta-link{color:var(--text-dark);border-bottom-style:solid;border-bottom-width:.1em;text-decoration:none}
+.cta-link{
+  color: var(--text-dark);
+  border-bottom: 0.1em solid;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 0.8em;
+  transition: transform 0.3s;
+}
+
+
+.dropdown-text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  transition: max-height 0.6s ease-in-out, 
+              opacity 0.4s ease-in-out, 
+              padding 0.4s ease-in-out;
+}
+
+
+.dropdown:hover .dropdown-text {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 0.5em 0; 
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.copy-medium{font-size:1.3em;font-weight:400;line-height:1.45em;
+  position: relative;
+  display: inline-block;}
 
 .cta-link.is-bright{color:var(--floral-white)}
 
