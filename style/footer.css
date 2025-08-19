@@ -477,7 +477,6 @@
 
   .grid_item.footer-logo {
     width: 100%;
-    padding-top: 5em;
     padding-bottom: 3em;
   }
 
@@ -532,10 +531,6 @@
 
   .grid_item.footer-text-mobile {
     width: 100%;
-  }
-
-  .grid_item.footer-logo {
-    padding-top: 9.7em;
   }
 
   .grid_item.is--50.footer-2 {
