@@ -880,7 +880,7 @@ textarea.w-input,textarea.w-select{}
   
   .video-teaser-wrapper{grid-column-gap:2.5em;align-items:flex-start;padding-left:7.2em;padding-right:5em;display:flex}.video-teaser-caption-wrapper{text-align:left;flex:1}.video-teaser-video{z-index:1;border-radius:1em;height:0;padding-top:62%}.video-teaser-video-wrapper{width:18em;position:relative}.text-bold{font-weight:700}.no-underline{text-decoration:none}.play-button{background-color:var(--floral-white);color:var(--text-dark);border-radius:999em;justify-content:center;align-items:center;width:3em;height:3em;transition:all .2s;display:flex}.play-button:hover{transform:scale(1.1)}.play-icon{align-items:center;width:.6em;height:1em;margin-left:.2em}.video-teaser-play-wrapper{z-index:1;position:absolute;inset:auto auto 1em 1em}
   
-  .section-stage{height:600vh;position:relative}
+  .section-stage{height:250vh;position:relative}
   
   .stage-wrapper{width:100%;
     height:100vh;
@@ -1111,6 +1111,9 @@ font-size: 40px;}
 
 .sunset-inner{color:#fffbf5;
     background-image:linear-gradient(#054d61,#049990 10%,#054d61 45%,#049990 65%);height:600vh;position:relative}
+
+.sunset-inner-inicio{color:#fffbf5;
+    background-image:linear-gradient(#054d61,#049990 10%,#054d61 45%,#049990 65%);height:250vh;position:relative}
 
 #degradadoPortada {
   height: 400vh;
