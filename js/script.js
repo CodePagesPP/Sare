@@ -1,23 +1,47 @@
-function openModal(card) {
-  const modal = document.getElementById("imgModal");
-  const expandedImg = document.getElementById("expandedImg");
+document.querySelectorAll(".cell-content").forEach(card => {
+  const hoverCard = card.querySelector(".hover-card");
+  const prevBtn = hoverCard.querySelector("#prev-btn");
+  const nextBtn = hoverCard.querySelector("#next-btn");
 
+  const sources = JSON.parse(card.dataset.sources);
+  let current = 0;
 
-  const bgImg = card.querySelector(".background-image");
-  expandedImg.src = bgImg.src;
-
-  modal.style.display = "block";
-}
-
-function closeModal(event) {
-  if (event) event.stopPropagation();
-  document.getElementById("imgModal").style.display = "none";
-}
-
-
-window.onclick = function(event) {
-  const modal = document.getElementById("imgModal");
-  if (event.target === modal) {
-    modal.style.display = "none";
+  function renderCard(){
+    hoverCard.querySelector(".logo").innerText = sources[current].logo;
+    hoverCard.querySelector(".logo-img").src = sources[current].logoUrl;
+    hoverCard.querySelector("#card-title").innerText = sources[current].title;
+    hoverCard.querySelector("#card-desc").innerText = sources[current].desc;
+    hoverCard.querySelector("#card-count").innerText = (current+1) + "/" + sources.length;
   }
-}
+
+  nextBtn.addEventListener("click", (e)=>{
+    e.stopPropagation();
+    current = (current+1) % sources.length;
+    renderCard();
+  });
+
+  prevBtn.addEventListener("click", (e)=>{
+    e.stopPropagation();
+    current = (current-1+sources.length) % sources.length;
+    renderCard();
+  });
+
+  card.addEventListener("mouseenter", (e)=>{
+    hoverCard.style.display = "block";
+    hoverCard.style.top = (e.clientY + 15) + "px";
+    hoverCard.style.left = (e.clientX + 15) + "px";
+    renderCard();
+  });
+
+  function hideHoverCard(){
+    hoverCard.style.display = "none";
+  }
+
+  card.addEventListener("mouseleave", ()=>{
+    if (!hoverCard.matches(":hover")) hideHoverCard();
+  });
+
+  hoverCard.addEventListener("mouseleave", ()=>{
+    if (!card.matches(":hover")) hideHoverCard();
+  });
+});
