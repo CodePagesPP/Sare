@@ -24,6 +24,7 @@
         <link href="./assets/favicon.png" rel="shortcut icon" type="image/x-icon"/>
         <link href="./assets/favicon.png" rel="apple-touch-icon"/>
         <link rel="stylesheet" href="./style/footer.css">
+        <link rel="stylesheet" href="./style/style-sliderPortada.css">
     </head>
     <body>
         <div class="custom-css w-embed">
@@ -113,150 +114,47 @@
                 </div>
             </div>
         </div>
-        <div class="section-gallery">
-            <div class="gallery-scroll-distance"></div>
-            <div class="hero-gallery-item">
-                <div class="gallery-item-sticky">
-                    <div class="gallery-item-inner">
-                        <div class="gallery-item-media-gradient"></div>
-                        <div class="gallery-item-content-wrapper">
-                            <div class="gallery-item-content-inner">
-                                <div class="gutter-outside">
-                                    <div class="gallery-item-copy">
-                                        <div class="p-xxs-end">
-                                            <p class="title4">Dashboads, automatización, marketing digital e integración de datos.</p>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-item-title-wrapper">
-                                        <p class="title1" style="font-family: 'Designer';">Business Intelligence</p>
-                                    </div> 
-                                </div>
 
-                            </div>
-                        </div>
-                        <img src="https://cdn.prod.website-files.com/681e06a076ea0df11d8c5b9e/682206a6e5b82c6f0bc04a67_Dashboard-p-2000.webp" loading="lazy" alt="a car driving on a road with mountains in the background" class="gallery-item-media"/>
-                    </div>
-                </div>
-                <div class="gallery-scroll-distance"></div>
+        <section class="slider-section">
+            <!-- Fondo en carrusel -->
+            <div class="slider-bg" id="sliderBg">
+            <div class="bg-slide" style="background-image:url('./assets/mockup\ letrero.png')"></div>
+            <div class="bg-slide" style="background-image:url('./assets/Mockup\ tarjetas1.png')"></div>
+            <div class="bg-slide" style="background-image:url('./assets/SARE\ BRAND\ MANUAL-19.png')"></div>
+            <div class="bg-slide" style="background-image:url('https://picsum.photos/id/1016/1200/800')"></div>
+            <div class="bg-slide" style="background-image:url('https://picsum.photos/id/1005/1200/800')"></div>
+            <div class="bg-slide" style="background-image:url('https://picsum.photos/id/1033/1200/800')"></div>
             </div>
-            <div class="hero-gallery-item">
-                <div class="gallery-item-sticky">
-                    <div class="gallery-item-inner">
-                        <div class="gallery-item-media-gradient"></div>
-                        <div class="gallery-item-content-wrapper">
-                            <div class="gallery-item-content-inner">
-                                <div class="gutter-outside">
-                                    <div class="gallery-item-title-wrapper">
-                                        <p style="font-family: 'Designer';" class="title1">Data Analytics</p>
-                                    </div>
-                                    <div class="gallery-item-copy">
-                                        <div class="p-xs-start">
-                                            <p class="copy-medium text-semibold title4">Análisis estadístico, productividad, desempeño y métricas de marketing. Identificación de desviaciones, oportunidades de mejora y patrones de comportamiento </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/SARE BRAND MANUAL-19.png" loading="lazy" alt="a person using a phone in a car" class="gallery-item-media"/>
-                    </div>
-                </div>
-                <div class="gallery-scroll-distance"></div>
+
+            <!-- Contenido -->
+            <div class="slider-content" id="sliderContent">
+            <h2 id="slideTitle">Minería de Datos y Machine Learning</h2>
+            <p id="slideText">
+                Modelos de ML, recuperación metalúrgica, segmentación de clientes,
+                patrones de comportamiento y predicción de resultados.
+            </p>
+
+            <div id="buttons">
+                <div class="service-btn active" data-index="0">Dashboard 1</div>
+                <div class="service-btn" data-index="1">Dashboard 2</div>
+                <div class="service-btn" data-index="2">Dashboard 3</div>
+                <div class="service-btn" data-index="3">Dashboard 4</div>
+                <div class="service-btn" data-index="4">Dashboard 5</div>
+                <div class="service-btn" data-index="5">Dashboard 6</div>
             </div>
-            <div class="hero-gallery-item">
-                <div class="gallery-item-sticky">
-                    <div class="gallery-item-inner">
-                        <div class="gallery-item-media-gradient"></div>
-                        <div class="gallery-item-content-wrapper">
-                            <div class="gallery-item-content-inner">
-                                <div class="gutter-outside">                                
-                                    <div class="gallery-item-title-wrapper">
-                                        <p style="font-family: 'Designer';" class="title1">Minería de Datos y Machine Learning</p>                                        
-                                    </div>
-                                    <div class="gallery-item-copy">
-                                        <div class="p-xs-start">
-                                            <p class="copy-medium text-semibold">Modelos de ML, recuperación metalúrgica, segmentación de clientes para optimización operativa. Patrones de comportamiento y predicción de resultados.</p>                                         
-                                        </div>
-                                    </div>                           
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/Mockup tarjetas1.png" loading="lazy" alt="a car on a road with grass and mountains in the background" class="gallery-item-media"/>
-                    </div>
-                </div>
-                <div class="gallery-scroll-distance"></div>
             </div>
-            <div class="hero-gallery-item">
-                <div class="gallery-item-sticky">
-                    <div class="gallery-item-inner">
-                        <div class="gallery-item-media-gradient"></div>
-                        <div class="gallery-item-content-wrapper">
-                            <div class="gallery-item-content-inner">
-                                <div class="gutter-outside">
-                                    <div class="gallery-item-title-wrapper">
-                                        <p style="font-family: 'Designer';" class="title1">Planeamiento y control de proyectos</p>
-                                    </div>
-                                    <div class="gallery-item-copy">
-                                        <div class="p-xs-start">
-                                            <p class="copy-medium text-semibold">Apoyo a oficinas de PMO con herramientas de analítica avanzada.<br>Seguimiento y análisis de cronogramas.<br>Evaluación de avance físico vs financiero.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/mockup letrero.png" loading="lazy" alt="a person using a phone in a car" class="gallery-item-media"/>
-                    </div>
-                </div>
-                <div class="gallery-scroll-distance"></div>
+
+            <!-- Puntos -->
+            <div class="dots" id="dots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+            <div class="dot" data-index="5"></div>
             </div>
-            <div class="hero-gallery-item">
-                <div class="gallery-item-sticky">
-                    <div class="gallery-item-inner">
-                        <div class="gallery-item-media-gradient"></div>
-                        <div class="gallery-item-content-wrapper">
-                            <div class="gallery-item-content-inner">
-                                <div class="gutter-outside">
-                                    <div class="gallery-item-title-wrapper">
-                                        <p style="font-family: 'Designer';" class="title1">Consultoría Estratégica basada en Datos</p>
-                                    </div>
-                                    <div class="gallery-item-copy">
-                                        <div class="p-xs-start">
-                                            <p class="copy-medium text-semibold">Análisis de toma de decisiones. <br>Evaluación y modelamiento de escenarios. <br>Planes de transformación digital. <br>Acompañamiento a líderes de área.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="https://cdn.prod.website-files.com/681e06a076ea0df11d8c5bb7/68329678db427a83a45e7106_blog%20image%2005.png" loading="lazy" alt="a person using a phone in a car" class="gallery-item-media"/>
-                    </div>
-                </div>
-                <div class="gallery-scroll-distance"></div>
-            </div>
-            <div class="hero-gallery-item-last">
-                <div class="gallery-item-sticky">
-                    <div class="gallery-item-inner">
-                        <div class="gallery-item-media-gradient"></div>
-                        <div class="gallery-item-content-wrapper">
-                            <div class="gallery-item-content-inner">
-                                <div class="gutter-outside">
-                                    <div class="gallery-item-title-wrapper">
-                                        <p style="font-family: 'Designer';" class="title1">Capacitación y Soporte</p>
-                                    </div>
-                                    <div class="gallery-item-copy">
-                                        <div class="p-xs-start">
-                                            <p class="copy-medium text-semibold">Capacitación a equipos técnicos en el uso de dashboards y herramientas de BI. <br>Soporte continuo para la evolución de las soluciones implementadas.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lightbox-bg-image-wrapper">
-                            <img src="https://cdn.prod.website-files.com/68555529e0995875961f5fa9/68591bfadab4c9e4a99ebb04_about-detail-image.webp" loading="lazy" alt="a black car with a white background" class="gallery-item-media"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-  
+        </section>
+
         <div class="section-powered-by-the-sun">
             <div class="powered-by-the-sun-wrapper">
                 <div class="powered-by-the-sun-inner">
@@ -809,6 +707,7 @@
         <script src="./js/script-sare-1.js" type="text/javascript"></script>
         <script src="./js/script-sare-2.js" type="text/javascript"></script>
         <script src="./js/script-sare-3.js" type="text/javascript"></script>
+        <script src="./js/script-sliderPortada.js"></script>
         <script src="./js/script.js"></script>
         <script>
             // Adds overflow hidden to the body prevent page scrolling when popup is open
