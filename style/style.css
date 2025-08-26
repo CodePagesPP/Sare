@@ -33,6 +33,89 @@ body{margin:0
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 
+.nav-dots {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  z-index: 10000;
+}
+
+.nav-dots .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+/* Tooltip */
+.nav-dots .dot::after {
+  content: attr(data-title);
+  position: absolute;
+  right: 150%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #049990;
+  color: #fff;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+/* flechita */
+.nav-dots .dot::before {
+  content: "";
+  position: absolute;
+  right: 135%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #049990;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Al pasar el mouse */
+.nav-dots .dot:hover::after,
+.nav-dots .dot:hover::before {
+  opacity: 1;
+}
+
+/* Cuando está activo también muestra el tooltip */
+.nav-dots .dot.active::after,
+.nav-dots .dot.active::before {
+  opacity: 1;
+}
+
+.nav-dots .dot:hover {
+  background: #049990;
+}
+
+.nav-dots .dot.active {
+  background: #049990;
+}
+
+.nav-dots .indicator {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #049990;
+  border-radius: 50%;
+  transition: top 0.3s ease;
+  pointer-events: none;
+}
+
 audio,canvas,progress,video{vertical-align:baseline;display:inline-block}
 
 audio:not([controls]){height:0;display:none}
@@ -910,9 +993,9 @@ textarea.w-input,textarea.w-select{}
 
 .stage-copy-inner{width:100%;margin-top:-2vh}
 
-.savesion-wrapper{z-index:11;justify-content:center;align-items:center;width:auto;display:flex;position:absolute;top:4em}
+.savesion-wrapper{z-index: 101; justify-content:center;align-items:center;width:auto;display:flex;position:absolute;top:4em}
 
-.why-this-site-wrapper{z-index:11;position:absolute;inset:4em 0% auto auto}
+.why-this-site-wrapper{z-index:101;position:absolute;inset:4em 0% auto auto}
 
 .save-sion-1,.save-sion-2,.save-sion-3{font-family: 'Designer'; display:block;
 font-size: 40px;}
@@ -921,7 +1004,7 @@ font-size: 40px;}
 
 .stage-sun-wrapper{z-index:10;justify-content:flex-start;align-items:center;position:sticky;top:0%}
 
-.stage-header{justify-content:flex-start;align-items:center;width:100%;height:100%;position:absolute}
+.stage-header{justify-content:flex-start;align-items:center;width:100%;height:100%;position:absolute; }
 
 .overflow-hidden{overflow:hidden}
 
