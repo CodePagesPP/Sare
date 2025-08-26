@@ -1,39 +1,39 @@
-const sliderBg3 = document.getElementById("sliderBg");
-const slideTitle3 = document.getElementById("slideTitle");
-const slideText3 = document.getElementById("slideText");
-const sliderContent3 = document.getElementById("sliderContent");
-const buttons3 = document.querySelectorAll(".service-btn");
-const dots3 = document.querySelectorAll(".dot");
+const sliderBg3 = document.getElementById("sliderBg3");
+const slideTitle3 = document.getElementById("slideTitle3");
+const slideText3 = document.getElementById("slideText3");
+const sliderContent3 = document.getElementById("sliderContent3");
+const buttons3 = document.querySelectorAll(".service-btn3");
+const dots3 = document.querySelectorAll(".dot3");
 
 // Contenido de cada slide
 const slidesData3 = [
   {
-    title: "Dashboards personalizados",
-    text: "Creamos tableros visuales adaptados a las necesidades de cada cliente, facilitando el seguimiento de KPIs clave y simplificando el análisis de información en tiempo real."
+    title: "Gestión de costos y presupuestos (CAPEX/OPEX)",
+    text: "Optimizamos la administración financiera de proyectos asegurando un control preciso de presupuestos e inversiones."
   },
   {
-    title: "Automatización de reportes",
-    text: "Reducimos el tiempo invertido en tareas repetitivas mediante reportes automáticos y dinámicos que aseguran información siempre actualizada y confiable."
+    title: "Optimización operativa",
+    text: "Analizamos procesos para aumentar eficiencia, reducir tiempos y mejorar productividad."
   },
   {
-    title: "Integración de datos",
-    text: "Conectamos múltiples fuentes como ERP, Excel o CRM en un solo sistema, logrando una visión unificada y precisa de la operación."
+    title: "VDC, BIM y Lean Construction",
+    text: "Aplicamos metodologías digitales y de mejora continua que elevan la calidad y reducen desperdicios."
   },
   {
-    title: "Modelos predictivos",
-    text: "Aplicamos técnicas de machine learning y estadística para anticipar escenarios futuros y mejorar la planificación estratégica."
+    title: "Modelos de simulación",
+    text: "Desarrollamos modelos que permiten anticipar escenarios, evaluar alternativas y tomar decisiones basadas en evidencia."
   },
   {
-    title: "Visualización de datos",
-    text: "Diseñamos gráficos claros e intuitivos que convierten la información compleja en insights accionables para la toma de decisiones."
+    title: "Análisis de confiabilidad y desempeño",
+    text: "Medimos y mejoramos el rendimiento de equipos, sistemas y procesos para garantizar disponibilidad y eficiencia."
   },
   {
-    title: "Monitoreo digital de proyectos",
-    text: "Implementamos sistemas que permiten seguir en línea el avance de los proyectos, comparando metas planificadas con resultados reales."
+    title: "Estudios de productividad y eficiencia en campo",
+    text: "Realizamos evaluaciones directas en operaciones que permiten identificar cuellos de botella y proponer mejoras inmediatas."
   }
 ];
 
-function goToSlide(index) {
+function goToSlide3(index) {
   // Mueve el fondo en horizontal
   sliderBg3.style.transform = `translateX(-${index * 100}%)`;
 
@@ -43,8 +43,8 @@ function goToSlide(index) {
 
   setTimeout(() => {
     // Cambiar contenido
-    slideTitle3.textContent = slidesData[index].title;
-    slideText3.textContent = slidesData[index].text;
+    slideTitle3.textContent = slidesData3[index].title;
+    slideText3.textContent = slidesData3[index].text;
 
     // Reaparece con animación
     slideTitle3.classList.remove("fade-out");
@@ -61,22 +61,22 @@ function goToSlide(index) {
 
   // Marcar activo botón y punto
   buttons3.forEach(btn => btn.classList.remove("active"));
-  buttons[index].classList.add("active");
+  buttons3[index].classList.add("active");
 
   dots3.forEach(dot => dot.classList.remove("active"));
-  dots[index].classList.add("active");
+  dots3[index].classList.add("active");
 }
 
 // Eventos en botones
 buttons3.forEach(btn => {
   btn.addEventListener("click", () => {
-    goToSlide(parseInt(btn.dataset.index));
+    goToSlide3(parseInt(btn.dataset.index));
   });
 });
 
 // Eventos en puntos
 dots3.forEach(dot => {
   dot.addEventListener("click", () => {
-    goToSlide(parseInt(dot.dataset.index));
+    goToSlide3(parseInt(dot.dataset.index));
   });
 });

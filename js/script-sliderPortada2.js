@@ -8,28 +8,28 @@ const dots2 = document.querySelectorAll(".dot2");
 // Contenido de cada slide
 const slidesData2 = [
   {
-    title: "Dashboards personalizados",
-    text: "Creamos tableros visuales adaptados a las necesidades de cada cliente, facilitando el seguimiento de KPIs clave y simplificando el análisis de información en tiempo real."
+    title: "Planeamiento y control de proyectos (PMO)",
+    text: "Fortalecemos la gestión de proyectos a través de metodologías avanzadas que garantizan control en plazos, costos y recursos."
   },
   {
-    title: "Automatización de reportes",
-    text: "Reducimos el tiempo invertido en tareas repetitivas mediante reportes automáticos y dinámicos que aseguran información siempre actualizada y confiable."
+    title: "Transformación digital",
+    text: "Guiamos a las organizaciones en la adopción de herramientas digitales y analíticas, asegurando un cambio ordenado y efectivo."
   },
   {
-    title: "Integración de datos",
-    text: "Conectamos múltiples fuentes como ERP, Excel o CRM en un solo sistema, logrando una visión unificada y precisa de la operación."
+    title: "Estrategia eCommerce",
+    text: "Diseñamos planes para digitalizar negocios, aumentar ventas online y optimizar la experiencia de compra en pymes y empresas."
   },
   {
-    title: "Modelos predictivos",
-    text: "Aplicamos técnicas de machine learning y estadística para anticipar escenarios futuros y mejorar la planificación estratégica."
+    title: "Gestión de riesgos",
+    text: "Identificamos, evaluamos y mitigamos riesgos en proyectos y operaciones, minimizando impactos y asegurando continuidad."
   },
   {
-    title: "Visualización de datos",
-    text: "Diseñamos gráficos claros e intuitivos que convierten la información compleja en insights accionables para la toma de decisiones."
+    title: "Evaluación financiera y de inversiones",
+    text: "Analizamos la viabilidad económica de proyectos y alternativas de inversión para apoyar decisiones sólidas y rentables."
   },
   {
-    title: "Monitoreo digital de proyectos",
-    text: "Implementamos sistemas que permiten seguir en línea el avance de los proyectos, comparando metas planificadas con resultados reales."
+    title: "Roadmaps de innovación e inteligencia artificial",
+    text: "Construimos planes de adopción tecnológica que alinean innovación, IA y estrategia empresarial con objetivos de negocio."
   }
 ];
 
