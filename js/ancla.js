@@ -1,4 +1,4 @@
-const dots = document.querySelectorAll('.nav-dots .dot');
+const dotsancla = document.querySelectorAll('.nav-dots .dot-ancla');
 const indicator = document.querySelector('.nav-dots .indicator');
 
 function moveIndicator(element) {
@@ -7,12 +7,12 @@ function moveIndicator(element) {
 }
 
 
-dots.forEach(dot => {
+dotsancla.forEach(dot => {
   dot.addEventListener('click', e => {
     e.preventDefault();
 
    
-    dots.forEach(d => d.classList.remove('active'));
+    dotsancla.forEach(d => d.classList.remove('active'));
     dot.classList.add('active');
 
     
@@ -38,10 +38,10 @@ const observer = new IntersectionObserver(entries => {
       const id = `#${entry.target.id}`;
 
       
-      const activeDot = [...dots].find(dot => dot.dataset.target === id);
+      const activeDot = [...dotsancla].find(dot => dot.dataset.target === id);
 
       if (activeDot) {
-        dots.forEach(d => d.classList.remove('active'));
+        dotsancla.forEach(d => d.classList.remove('active'));
         activeDot.classList.add('active');
         moveIndicator(activeDot);
       }
@@ -55,4 +55,4 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('section, div[id]').forEach(sec => observer.observe(sec));
 
 
-moveIndicator(dots[0]);
+moveIndicator(dotsancla[0]);

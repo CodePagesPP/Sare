@@ -45,7 +45,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   z-index: 10000;
 }
 
-.nav-dots .dot {
+.nav-dots .dot-ancla {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -54,8 +54,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   transition: background 0.3s ease;
 }
 
-/* Tooltip */
-.nav-dots .dot::after {
+
+.nav-dots .dot-ancla::after {
   content: attr(data-title);
   position: absolute;
   right: 150%;
@@ -72,8 +72,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   white-space: nowrap;
 }
 
-/* flechita */
-.nav-dots .dot::before {
+
+.nav-dots .dot-ancla::before {
   content: "";
   position: absolute;
   right: 135%;
@@ -86,23 +86,23 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   transition: opacity 0.3s ease;
 }
 
-/* Al pasar el mouse */
-.nav-dots .dot:hover::after,
-.nav-dots .dot:hover::before {
+
+.nav-dots .dot-ancla:hover::after,
+.nav-dots .dot-ancla:hover::before {
   opacity: 1;
 }
 
-/* Cuando está activo también muestra el tooltip */
-.nav-dots .dot.active::after,
-.nav-dots .dot.active::before {
+
+.nav-dots .dot-ancla.active::after,
+.nav-dots .dot-ancla.active::before {
   opacity: 1;
 }
 
-.nav-dots .dot:hover {
+.nav-dots .dot-ancla:hover {
   background: #049990;
 }
 
-.nav-dots .dot.active {
+.nav-dots .dot-ancla.active {
   background: #049990;
 }
 

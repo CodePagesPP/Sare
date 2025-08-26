@@ -8,28 +8,28 @@ const dots = document.querySelectorAll(".dot");
 // Contenido de cada slide
 const slidesData = [
   {
-    title: "Minería de Datos y Machine Learning",
-    text: "Modelos de ML, recuperación metalúrgica, segmentación de clientes, patrones de comportamiento y predicción de resultados."
+    title: "Dashboards personalizados",
+    text: "Creamos tableros visuales adaptados a las necesidades de cada cliente, facilitando el seguimiento de KPIs clave y simplificando el análisis de información en tiempo real."
   },
   {
-    title: "Optimización de Procesos",
-    text: "Soluciones de IA para la mejora continua de la eficiencia operativa y reducción de costos."
+    title: "Automatización de reportes",
+    text: "Reducimos el tiempo invertido en tareas repetitivas mediante reportes automáticos y dinámicos que aseguran información siempre actualizada y confiable."
   },
   {
-    title: "Seguridad Predictiva",
-    text: "Análisis de datos para prevenir incidentes y mejorar la seguridad industrial."
+    title: "Integración de datos",
+    text: "Conectamos múltiples fuentes como ERP, Excel o CRM en un solo sistema, logrando una visión unificada y precisa de la operación."
   },
   {
-    title: "Inteligencia Comercial",
-    text: "Segmentación avanzada de clientes para estrategias de marketing efectivas."
+    title: "Modelos predictivos",
+    text: "Aplicamos técnicas de machine learning y estadística para anticipar escenarios futuros y mejorar la planificación estratégica."
   },
   {
-    title: "Análisis de Comportamiento",
-    text: "Identificación de patrones de consumo y tendencias del mercado."
+    title: "Visualización de datos",
+    text: "Diseñamos gráficos claros e intuitivos que convierten la información compleja en insights accionables para la toma de decisiones."
   },
   {
-    title: "Predicción de Resultados",
-    text: "Modelos predictivos que ayudan en la toma de decisiones estratégicas."
+    title: "Monitoreo digital de proyectos",
+    text: "Implementamos sistemas que permiten seguir en línea el avance de los proyectos, comparando metas planificadas con resultados reales."
   }
 ];
 
