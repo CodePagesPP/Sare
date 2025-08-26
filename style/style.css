@@ -176,6 +176,26 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   object-fit: contain;
 }
 
+.font-counter {
+  display: inline-block;
+  margin-left: 6px;       /* separación con el texto */
+  padding: 2px 6px;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #fff;
+  background: #59636e;    /* azul */
+  border-radius: 12px;    /* pastilla redondeada */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.font-counter:hover {
+  background: var(--principal2);    /* azul más oscuro en hover */
+  transform: scale(1.1);  /* efecto de agrandar un poco */
+}
+
+
+
 
 
 audio,canvas,progress,video{vertical-align:baseline;display:inline-block}

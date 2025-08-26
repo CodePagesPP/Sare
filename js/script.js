@@ -2,9 +2,14 @@ document.querySelectorAll(".cell-content").forEach(card => {
   const hoverCard = card.querySelector(".hover-card");
   const prevBtn = hoverCard.querySelector("#prev-btn");
   const nextBtn = hoverCard.querySelector("#next-btn");
+  const trigger = card.querySelector(".font-counter"); 
+  const counterSpan = card.querySelector(".font-counter");
 
   const sources = JSON.parse(card.dataset.sources);
   let current = 0;
+  if (counterSpan) {
+  counterSpan.innerText = "+" + sources.length;
+}
 
   function renderCard(){
     hoverCard.querySelector(".logo").innerText = sources[current].logo;
@@ -26,7 +31,8 @@ document.querySelectorAll(".cell-content").forEach(card => {
     renderCard();
   });
 
-  card.addEventListener("mouseenter", (e)=>{
+
+  trigger.addEventListener("mouseenter", (e)=>{
     hoverCard.style.display = "block";
     hoverCard.style.top = (e.clientY + 15) + "px";
     hoverCard.style.left = (e.clientX + 15) + "px";
@@ -37,11 +43,14 @@ document.querySelectorAll(".cell-content").forEach(card => {
     hoverCard.style.display = "none";
   }
 
-  card.addEventListener("mouseleave", ()=>{
-    if (!hoverCard.matches(":hover")) hideHoverCard();
+
+  trigger.addEventListener("mouseleave", ()=>{
+    setTimeout(()=>{
+      if (!hoverCard.matches(":hover")) hideHoverCard();
+    }, 100);
   });
 
   hoverCard.addEventListener("mouseleave", ()=>{
-    if (!card.matches(":hover")) hideHoverCard();
+    if (!trigger.matches(":hover")) hideHoverCard();
   });
 });
