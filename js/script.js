@@ -32,12 +32,21 @@ document.querySelectorAll(".cell-content").forEach(card => {
   });
 
 
-  trigger.addEventListener("mouseenter", (e)=>{
-    hoverCard.style.display = "block";
+  trigger.addEventListener("mouseenter", (e) => {
+  hoverCard.style.display = "block";
+
+  if (card.classList.contains("last-card")) {
+   
+    hoverCard.style.top = (e.clientY - hoverCard.offsetHeight - 15) + "px";
+    hoverCard.style.left = (e.clientX - hoverCard.offsetWidth + 50) + "px"; 
+  } else {
+    
     hoverCard.style.top = (e.clientY + 15) + "px";
     hoverCard.style.left = (e.clientX + 15) + "px";
-    renderCard();
-  });
+  }
+
+  renderCard();
+});
 
   function hideHoverCard(){
     hoverCard.style.display = "none";
