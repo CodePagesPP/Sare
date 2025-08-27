@@ -17,7 +17,13 @@ document.querySelectorAll(".cell-content").forEach(card => {
     hoverCard.querySelector("#card-title").innerText = sources[current].title;
     hoverCard.querySelector("#card-desc").innerText = sources[current].desc;
     hoverCard.querySelector("#card-count").innerText = (current+1) + "/" + sources.length;
+    hoverCard.dataset.url = sources[current].url;
   }
+
+  hoverCard.addEventListener("click", () => {
+    const url = hoverCard.dataset.url;
+    if(url) window.open(url, '_blank');
+  })
 
   nextBtn.addEventListener("click", (e)=>{
     e.stopPropagation();
@@ -39,6 +45,10 @@ document.querySelectorAll(".cell-content").forEach(card => {
    
     hoverCard.style.top = (e.clientY - hoverCard.offsetHeight - 15) + "px";
     hoverCard.style.left = (e.clientX - hoverCard.offsetWidth + 50) + "px"; 
+  } else if (card.classList.contains("last-card-2")) {   
+
+    hoverCard.style.top = (e.clientY - hoverCard.offsetHeight - 15) + "px";
+    hoverCard.style.left = (e.clientX + 15) + "px";
   } else {
     
     hoverCard.style.top = (e.clientY + 15) + "px";

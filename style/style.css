@@ -140,9 +140,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   margin-bottom: 8px;
 }
 
-.card-body h4 {
+.card-body .card-title {
   font-size: 1em;
   margin: 0 0 6px;
+  font-family: 'Mont';
 }
 
 .card-body p {
