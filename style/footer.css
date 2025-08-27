@@ -81,7 +81,9 @@
 }
 
 #contact {
-
+      width: -webkit-fill-available;
+    font-size: 1vw;
+    z-index: 10000;
 
   font-size: 1vw;
   line-height: 20px;
@@ -643,6 +645,7 @@
   .container.footer {
     padding-top: 15em;
     padding-bottom: 10em;
+    width: min-content;
   }
 
   .checkbox-field {
