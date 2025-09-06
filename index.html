@@ -26,17 +26,25 @@
         <link href="./assets/favicon.png" rel="apple-touch-icon"/>
         <link rel="stylesheet" href="./style/footer.css">
         <link rel="stylesheet" href="./style/style-sliderPortada.css">
+        <link rel="stylesheet" href="./style/wsp.css">
     </head>
     <body>
-        
-    <div class="nav-dots">
+        <a href="https://api.whatsapp.com/send?phone=51952272635&text=Hola,%20me%20gustaria%20obtener%20m%C3%A1s%20información" 
+   class="float push" target="_blank" id="whatsappBtn">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
+       <div class="nav-dots">
             <a href="#" class="dot-ancla active" data-title="Inicio" data-target="#inicio"></a>
-            <a href="#" class="dot-ancla" data-title="Servicios" data-target="#services"></a>
+            <a href="#" class="dot-ancla" data-title="Servicios"  data-target="#services"></a>
             <a href="#" class="dot-ancla" data-title="Consultoría" data-target="#consultoria"></a>
             <a href="#" class="dot-ancla" data-title="Ingeniería" data-target="#ingenieria"></a>
             <a href="#" class="dot-ancla" data-title="¿Quiénes somos?" data-target="#somos"></a>
             <a href="#" class="dot-ancla" data-title="Contacto" data-target="#contact"></a>
             <span class="indicator"></span>
+            <button class="lang" id="lang-toggle">
+                <img src="./assets/en.svg" alt="English" />
+                EN
+            </button>
         </div>
         <div class="custom-css w-embed">
           
@@ -80,12 +88,12 @@
                     <div class="sunset-title-wrapper">
                         <div class="sunset-title _1">
                             <div class="gutter-outside">
-                                <div class="sunset-title-text">Transformación con innovación, respaldada con experiencia.</div>
+                                <div class="sunset-title-text" data-i18n="portada.title1">Transformación con innovación, respaldada con experiencia.</div>
                             </div>
                         </div>
                         <div class="sunset-title _2">
                             <div class="gutter-outside">
-                                <div class="sunset-title-text">Innovamos en cada decisión estratégica.</div>
+                                <div class="sunset-title-text" data-i18n="portada.title2">Innovamos en cada decisión estratégica.</div>
                             </div>
                         </div>
                     </div>
@@ -105,11 +113,11 @@
                                     <div class="services-container">
                                         
                                         <div class="services-text">
-                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large">Servicios</h2> </div>
-                                        <p class="title3 text-regular">
+                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large" data-i18n="services.title">Servicios</h2> </div>
+                                        <p class="title3 text-regular" data-i18n="services.paragraph">
                                             Ofrecemos soluciones en Bussiness Intelligence, Data Analytics y Machine Learning que convierten datos en decisiones. Diseñamos dashboards, reportes automatizados e integraciones que permiten anticipar escenarios y gestionar proyectos con información clara y en tiempo real.
                                         </p>
-                                        <a href="#" target="_blank" class="button is-secondary w-button">Contáctanos</a>
+                                        <a href="#" target="_blank" class="button is-secondary w-button" data-i18n="btn.contact">Contáctanos</a>
                                         </div>                                      
                                         <div class="services-media">
                                         <img src="./assets/gifs/SERVICIOS.gif"  class="services-video">
@@ -175,11 +183,11 @@
                                     <div class="services-container">
                                         
                                         <div class="services-text">
-                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large">Consultoría</h2> </div>
-                                        <p class="title3 text-regular">
+                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large" data-i18n="consultoria.title">Consultoría</h2> </div>
+                                        <p class="title3 text-regular"  data-i18n="consultoria.paragraph">
                                             Acompañamos a las empresas en el planeamiento y control de proyectos (PMO) y en su transformación digital. Aplicamos metodologías sólidas, evaluaciones financieras y planes de innovación que impulsan la eficiencia, reducen riesgos y alinean cada decisión con los objetivos del negocio.
                                         </p>
-                                        <a href="#" target="_blank" class="button is-secondary w-button">Contáctanos</a>
+                                        <a href="#" target="_blank" class="button is-secondary w-button" data-i18n="btn.contact">Contáctanos</a>
                                         </div>                              
                                         <div class="services-media">
                                         <img src="./assets/gifs/CONSULLTORIA.gif"  class="services-video">
@@ -245,11 +253,11 @@
                                     <div class="services-container">
                                         
                                         <div class="services-text">
-                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large">Ingeniería</h2> </div>
-                                        <p class="title3 text-regular">
+                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large" data-i18n="ingenieria.title">Ingeniería</h2> </div>
+                                        <p class="title3 text-regular" data-i18n="ingenieria.paragraph">
                                             Integramos metodologías como Lean Construction, VDC, BIM y Lean Six Sigma para optimizar procesos en minería y construcción. Mejoramos productividad, reducimos costos y aseguramos proyectos eficientes mediante simulación, análisis de desempeño y gestión de recursos.
                                         </p>
-                                        <a href="#" target="_blank" class="button is-secondary w-button">Contáctanos</a>
+                                        <a href="#" target="_blank" class="button is-secondary w-button" data-i18n="btn.contact">Contáctanos</a>
                                         </div>
                                     
                                         <div class="services-media">
@@ -316,11 +324,11 @@
                                     <div class="services-container">
                                         
                                         <div class="services-text">
-                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large">¿Quiénes somos?</h2> </div>
-                                        <p class="title3 text-regular">
+                                        <div class="p-xxxs-start p-xs-end"> <h2 class="extra-large" data-i18n="somos.title">¿Quiénes somos?</h2> </div>
+                                        <p class="title3 text-regular" data-i18n="somos.paragraph">
                                         En SARE acompañamos a empresas de distintos sectores en la gestión de proyectos y en su transformación hacia modelos más eficientes e innovadores. A través de consultoría, ingeniería y servicios digitales ayudamos a convertir información en decisiones estratégicas, optimizar procesos y generar valor sostenible con confianza.
                                         </p>
-                                        <a href="#" target="_blank" class="button is-secondary w-button">Contáctanos</a>
+                                        <a href="#" target="_blank" class="button is-secondary w-button" data-i18n="btn.contact">Contáctanos</a>
                                         </div>                                      
                                         <div class="services-media">
                                         <img src="./assets/gifs/QUIENES-SOMOS.gif"  class="services-video">
@@ -895,6 +903,7 @@
         <script src="./js/script-sare-1.js" type="text/javascript"></script>
         <script src="./js/script-sare-2.js" type="text/javascript"></script>
         <script src="./js/script-sare-3.js" type="text/javascript"></script>
+        <script src="./js/lang.js"></script>
         <script src="./js/ancla.js"></script>
         <script src="./js/script-sliderPortada.js"></script>
         <script src="./js/script-sliderPortada2.js"></script>

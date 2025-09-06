@@ -73,3 +73,18 @@ document.querySelectorAll(".cell-content").forEach(card => {
     if (!trigger.matches(":hover")) hideHoverCard();
   });
 });
+
+
+document.getElementById("whatsappBtn").addEventListener("click", function(event) {
+   
+    event.preventDefault();
+
+  
+    window.open(this.href, "_blank");
+
+ 
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+});

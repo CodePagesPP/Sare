@@ -131,6 +131,24 @@ summary {
   pointer-events: none;
 }
 
+.lang {
+  font-family: 'Mont';
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 6px 10px;
+}
+
+.lang img {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+}
 
 
 .hover-card {

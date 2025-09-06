@@ -22,7 +22,13 @@ dotsancla.forEach(dot => {
     const section = document.querySelector(dot.dataset.target);
 
     
-    if (section) {
+    if (dot.dataset.target === '#contact') {
+      
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    } else if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
 
