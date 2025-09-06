@@ -24,10 +24,6 @@ const slidesData = [
     text: "Aplicamos técnicas de machine learning y estadística para anticipar escenarios futuros y mejorar la planificación estratégica."
   },
   {
-    title: "Visualización de datos",
-    text: "Diseñamos gráficos claros e intuitivos que convierten la información compleja en insights accionables para la toma de decisiones."
-  },
-  {
     title: "Monitoreo digital de proyectos",
     text: "Implementamos sistemas que permiten seguir en línea el avance de los proyectos, comparando metas planificadas con resultados reales."
   }
