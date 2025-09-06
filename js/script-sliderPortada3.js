@@ -6,32 +6,20 @@ const buttons3 = document.querySelectorAll(".service-btn3");
 const dots3 = document.querySelectorAll(".dot3");
 
 // Contenido de cada slide
-const slidesData3 = [
-  {
-    title: "Gestión de costos y presupuestos (CAPEX/OPEX)",
-    text: "Optimizamos la administración financiera de proyectos asegurando un control preciso de presupuestos e inversiones."
-  },
-  {
-    title: "Optimización operativa",
-    text: "Analizamos procesos para aumentar eficiencia, reducir tiempos y mejorar productividad."
-  },
-  {
-    title: "VDC, BIM y\nLean Construction",
-    text: "Aplicamos metodologías digitales y de mejora continua que elevan la calidad y reducen desperdicios."
-  },
-  {
-    title: "Modelos de simulación",
-    text: "Desarrollamos modelos que permiten anticipar escenarios, evaluar alternativas y tomar decisiones basadas en evidencia."
-  },
-  {
-    title: "Análisis de confiabilidad y desempeño",
-    text: "Medimos y mejoramos el rendimiento de equipos, sistemas y procesos para garantizar disponibilidad y eficiencia."
-  },
-  {
-    title: "Estudios de productividad y eficiencia en campo",
-    text: "Realizamos evaluaciones directas en operaciones que permiten identificar cuellos de botella y proponer mejoras inmediatas."
-  }
-];
+
+
+let slidesData3 = getSlidesData3("es");
+
+function getSlidesData3(lang) {
+  return [
+    { title: translations[lang]["engineering.0.title"], text: translations[lang]["engineering.0.text"] },
+    { title: translations[lang]["engineering.1.title"], text: translations[lang]["engineering.1.text"] },
+    { title: translations[lang]["engineering.2.title"], text: translations[lang]["engineering.2.text"] },
+    { title: translations[lang]["engineering.3.title"], text: translations[lang]["engineering.3.text"] },
+    { title: translations[lang]["engineering.4.title"], text: translations[lang]["engineering.4.text"] },
+    { title: translations[lang]["engineering.5.title"], text: translations[lang]["engineering.5.text"] }
+  ];
+}
 
 function goToSlide3(index) {
   // Mueve el fondo en horizontal
@@ -66,6 +54,9 @@ function goToSlide3(index) {
   dots3.forEach(dot => dot.classList.remove("active"));
   dots3[index].classList.add("active");
 }
+
+
+window.goToSlide3 = goToSlide3;
 
 // Eventos en botones
 buttons3.forEach(btn => {

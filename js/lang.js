@@ -1,5 +1,12 @@
 const translations = {
   en: {
+    "nav.inicio": "Home",
+    "nav.services": "Services",
+    "nav.consultoria": "Consulting",
+    "nav.ingenieria": "Engineering",
+    "nav.somos": "Who we are?",
+    "nav.contact": "Contact",
+
     //PORTADA
     "portada.title1": "Transformation with innovation, backed by experience. We innovate in every strategic decision",
     "portada.title2": "We innovate in every strategic decision.",
@@ -9,15 +16,66 @@ const translations = {
     "services.paragraph":"We offer solutions in Business Intelligence, Data Analytics and Machine Learning that convert data into decisions. We design dashboards, automated reports and integrations that allow us to anticipate scenarios and manage projects with clear information in real time.",
 
     //DASHBOARD SERVICIOS
+    "dashboard.0.title": "Custom dashboards",
+    "dashboard.0.text": "We create visual boards tailored to each client’s needs, making it easier to track key KPIs and analyze real-time information.",
 
+    "dashboard.1.title": "Report automation",
+    "dashboard.1.text": "We reduce time spent on repetitive tasks through automated, dynamic reports that ensure always updated and reliable information.",
+
+    "dashboard.2.title": "Data integration",
+    "dashboard.2.text": "We connect multiple sources such as ERP, Excel, or CRM platforms into a single system, achieving a unified and accurate view of operations.",
+
+    "dashboard.3.title": "Predictive models",
+    "dashboard.3.text": "We apply machine learning and statistics to anticipate future scenarios and improve strategic planning.",
+
+    "dashboard.4.title": "Digital project monitoring",
+    "dashboard.4.text": "We implement systems that allow online tracking of project progress, comparing planned goals with actual results.",
 
     //SECCION CONSULTORIA
     "consultoria.title": "Consulting",
     "consultoria.paragraph":"We accompany companies in project planning and control (PMO) and in their digital transformation. We apply solid methodologies, financial evaluations and innovation plans that drive efficiency, reduce risks and align each decision with business objectives.",
 
+    //DASHBOARD CONSULTORIA
+    "consulting.0.title": "Project planning and control (PMO)",
+    "consulting.0.text": "We strengthen project management through advanced methodologies that ensure control over schedules, costs, and resources.",
+
+    "consulting.1.title": "Digital transformation",
+    "consulting.1.text": "We guide organizations in adopting digital and analytical tools, ensuring an orderly and effective change.",
+
+    "consulting.2.title": "e-Commerce strategy",
+    "consulting.2.text": "We design plans to digitize businesses, increase online sales, and optimize the shopping experience for SMEs and companies.",
+
+    "consulting.3.title": "Risk management",
+    "consulting.3.text": "We identify, assess, and mitigate risks in projects and operations, minimizing impacts and ensuring continuity.",
+
+    "consulting.4.title": "Financial and investment evaluation",
+    "consulting.4.text": "We analyze the economic viability of projects and investment alternatives to support solid and profitable decisions.",
+
+    "consulting.5.title": "Innovation and artificial intelligence roadmaps",
+    "consulting.5.text": "We build technology adoption plans that connect innovation, AI, and business strategy with company objectives.",
     //SECCION INGENIERIA
     "ingenieria.title": "Engineering",
     "ingenieria.paragraph":"We integrate methodologies such as Lean Construction, VDC, BIM and Lean Six Sigma to optimize processes in mining and construction. We improve productivity, reduce costs and ensure efficient projects through simulation, performance analysis and resource management.",
+
+    //DASHBOARD INGENIERIA
+    "engineering.0.title": "Cost and budget management (CAPEX/OPEX)",
+    "engineering.0.text": "We optimize the financial management of projects by ensuring precise control of budgets and investments.",
+
+    "engineering.1.title": "Operational optimization",
+    "engineering.1.text": "We analyze processes to increase efficiency, reduce time, and improve productivity.",
+
+    "engineering.2.title": "VDC, BIM and Lean Construction",
+    "engineering.2.text": "We apply digital and continuous improvement methodologies that enhance quality and reduce waste.",
+
+    "engineering.3.title": "Simulation models",
+    "engineering.3.text": "We develop models that allow anticipating scenarios, evaluating alternatives, and making evidence-based decisions.",
+
+    "engineering.4.title": "Reliability and performance analysis",
+    "engineering.4.text": "We measure and improve the performance of equipment, systems, and processes to ensure availability and efficiency.",
+
+    "engineering.5.title": "Field productivity and efficiency studies",
+    "engineering.5.text": "We carry out direct evaluations in operations to identify bottlenecks and propose immediate improvements.",
+
 
     //SECCION QUIENES SOMOS
     "somos.title": "Who we are?",
@@ -65,32 +123,91 @@ const translations = {
     "btn.contact": "Contact us",
   },
   es: {
+    "nav.inicio": "Inicio",
+    "nav.services": "Servicios",
+    "nav.consultoria": "Consultoría",
+    "nav.ingenieria": "Ingeniería",
+    "nav.somos": "¿Quiénes somos?",
+    "nav.contact": "Contacto",
     //PORTADA
     "portada.title1": "Transformación con innovación, respaldada con experiencia.",
     "portada.title2": "Innovamos en cada decisión estratégica.",
 
     //SECCION SERVICIOS
     "services.title": "Servicios",
-    "services.paragraph":"Ofrecemos soluciones en Bussiness Intelligence, Data Analytics y Machine Learning que convierten datos en decisiones. Diseñamos dashboards, reportes automatizados e integraciones que permiten anticipar escenarios y gestionar proyectos con información clara y en tiempo real.",
+    "services.paragraph":"Ofrecemos soluciones en Bussiness Intelligence, Data Analytics y Machine Learning, pues convierten datos en decisiones. Diseñamos dashboards, reportes automatizados e integraciones, que permiten anticipar escenarios y gestionar proyectos con información precisa y actualizada.",
 
+    //DASHBOARD SERVICIOS
+    "dashboard.0.title": "Dashboards personalizados",
+    "dashboard.0.text": "Creamos tableros visuales adaptados a las necesidades de cada cliente, facilitando el seguimiento de KPIs clave y simplificando el análisis de información en tiempo real.",
+
+    "dashboard.1.title": "Automatización de reportes",
+    "dashboard.1.text": "Reducimos el tiempo invertido en tareas repetitivas mediante reportes automáticos y dinámicos que aseguran información siempre actualizada y confiable.",
+
+    "dashboard.2.title": "Integración de datos",
+    "dashboard.2.text": "Conectamos múltiples fuentes como ERP, Excel o plataformas de CRM en un solo sistema, logrando una visión unificada y precisa de la operación.",
+
+    "dashboard.3.title": "Modelos predictivos",
+    "dashboard.3.text": "Aplicamos técnicas de machine learning y estadística para anticipar escenarios futuros y mejorar la planificación estratégica.",
+
+    "dashboard.4.title": "Monitoreo digital de proyectos",
+    "dashboard.4.text": "Implementamos sistemas que permiten seguir en línea el avance de los proyectos, comparando metas planificadas con resultados reales.",
     //SECCION CONSULTORIA
     "consultoria.title": "Consultoría",
-    "consultoria.paragraph":"Acompañamos a las empresas en el planeamiento y control de proyectos (PMO) y en su transformación digital. Aplicamos metodologías sólidas, evaluaciones financieras y planes de innovación que impulsan la eficiencia, reducen riesgos y alinean cada decisión con los objetivos del negocio.",
+    "consultoria.paragraph":"Acompañamos a las empresas en el planeamiento y control de proyectos (PMO) y en su transformación digital. <br> Aplicamos metodologías sólidas, evaluaciones financieras y planes de innovación, que impulsan la eficiencia, reducen riesgos y vinculan cada decisión con los objetivos del negocio.",
+    
+    //DASHBOARD CONSULTORIA
+    "consulting.0.title": "Planeamiento y control de proyectos (PMO)",
+    "consulting.0.text": "Fortalecemos la gestión de proyectos a través de metodologías avanzadas que garantizan control en plazos, costos y recursos.",
+
+    "consulting.1.title": "Transformación digital",
+    "consulting.1.text": "Guiamos a las organizaciones en la adopción de herramientas digitales y analíticas, asegurando un cambio ordenado y efectivo.",
+
+    "consulting.2.title": "Estrategia e-Commerce",
+    "consulting.2.text": "Diseñamos planes para digitalizar negocios, aumentar ventas online y optimizar la experiencia de compra en PyMEs y empresas.",
+
+    "consulting.3.title": "Gestión de riesgos",
+    "consulting.3.text": "Identificamos, evaluamos y mitigamos riesgos en proyectos y operaciones, minimizando impactos y asegurando continuidad.",
+
+    "consulting.4.title": "Evaluación financiera y de inversiones",
+    "consulting.4.text": "Analizamos la viabilidad económica de proyectos y alternativas de inversión para apoyar decisiones sólidas y rentables.",
+
+    "consulting.5.title": "Roadmaps de innovación e inteligencia artificial",
+    "consulting.5.text": "Construimos planes de adopción tecnológica que vinculan innovación, IA y estrategia empresarial con los objetivos del negocio.",
+
     
     //SECCION INGENIERIA
     "ingenieria.title": "Ingeniería",
-    "ingenieria.paragraph":"Integramos metodologías como Lean Construction, VDC, BIM y Lean Six Sigma para optimizar procesos en minería y construcción. Mejoramos productividad, reducimos costos y aseguramos proyectos eficientes mediante simulación, análisis de desempeño y gestión de recursos.",
+    "ingenieria.paragraph":"Integramos metodologías como Lean Construction, VDC, BIM y Lean Six Sigma para optimizar procesos en minería y construcción. <br> Mejoramos productividad, reducimos costos y aseguramos proyectos eficientes mediante simulación, análisis de desempeño y gestión de recursos.",
 
+    //DASHBOARD INGENIERIA
+    "engineering.0.title": "Gestión de costos y presupuestos (CAPEX/OPEX)",
+    "engineering.0.text": "Optimizamos la administración financiera de proyectos asegurando un control preciso de presupuestos e inversiones.",
+
+    "engineering.1.title": "Optimización operativa",
+    "engineering.1.text": "Analizamos procesos para aumentar eficiencia, reducir tiempos y mejorar productividad.",
+
+    "engineering.2.title": "VDC, BIM y Lean Construction",
+    "engineering.2.text": "Aplicamos metodologías digitales y de mejora continua que elevan la calidad y reducen desperdicios.",
+
+    "engineering.3.title": "Modelos de simulación",
+    "engineering.3.text": "Desarrollamos modelos que permiten anticipar escenarios, evaluar alternativas y tomar decisiones basadas en evidencia.",
+
+    "engineering.4.title": "Análisis de confiabilidad y desempeño",
+    "engineering.4.text": "Medimos y mejoramos el rendimiento de equipos, sistemas y procesos para garantizar disponibilidad y eficiencia.",
+
+    "engineering.5.title": "Estudios de productividad y eficiencia en campo",
+    "engineering.5.text": "Realizamos evaluaciones directas en operaciones que permiten identificar cuellos de botella y proponer mejoras inmediatas.",
     //SECCION QUIENES SOMOS
     "somos.title": "¿Quiénes somos?",
-    "somos.paragraph":"En SARE acompañamos a empresas de distintos sectores en la gestión de proyectos y en su transformación hacia modelos más eficientes e innovadores. A través de consultoría, ingeniería y servicios digitales ayudamos a convertir información en decisiones estratégicas, optimizar procesos y generar valor sostenible con confianza.",
+    "somos.paragraph":"En SARE acompañamos a empresas de distintos sectores en la gestión de proyectos y en su transformación hacia modelos más eficientes e innovadores. <br> A través de consultoría, ingeniería y servicios digitales ayudamos a optimizar procesos y a convertir información en decisiones estratégicas para generar valor sostenible.",
 
     //SECCION SABIAS
     "sabias.title": "¿Sabías que?",
-    "sabias.1": "Hoy en día, las empresas que aplican People Analytics logran decisiones más estratégicas en gestión de talento. El uso de datos en RRHH permite reducir la rotación, mejorar el engagement y optimizar procesos de contratación.",
-    "sabias.2": "El análisis financiero potenciado con BI permite a las empresas detectar riesgos, prever escenarios y gestionar mejor el capital. La digitalización de la información contable y de inversiones es clave para la sostenibilidad financiera.",
-    "sabias.3": "En mercados cada vez más competitivos, entender el comportamiento del cliente es vital. El análisis de datos en ventas ayuda a anticipar demandas, personalizar ofertas y aumentar los ingresos de forma sostenible.",
-    "sabias.4": "La transformación digital no es solo para grandes corporaciones. Tiendas, restaurantes y fábricas también pueden mejorar su eficiencia y competitividad al integrar herramientas de analítica y BI en su día a día.",
+    "sabias.1": "Hoy en día, las empresas que aplican People Analytics logran decisiones más estratégicas en gestión de talento. <br> El uso de datos en RRHH permite reducir la rotación, mejorar el engagement y optimizar procesos de contratación.",
+    "sabias.2": "El análisis financiero potenciado con Power BI permite a las empresas detectar riesgos, prever escenarios y gestionar mejor el capital. <br> La digitalización de la información contable y de inversiones es clave para la sostenibilidad financiera.",
+    "sabias.3": "En mercados cada vez más competitivos, entender el comportamiento del cliente es vital. <br> El análisis de datos en ventas ayuda a anticipar demandas, personalizar ofertas y aumentar los ingresos de forma sostenible.",
+    "sabias.4": "La transformación digital no es solo para grandes corporaciones. <br> Comercios, restaurantes y fábricas también pueden mejorar su eficiencia y competitividad al integrar herramientas de analítica y Power BI en su día a día.",
     
     //SECCION COMO TRABAJAMOS
     "trabajamos.title": "¿Cómo trabajamos?",
@@ -117,9 +234,9 @@ const translations = {
     "card.title5": "Beneficios de BIM y <br> Lean en construcción",
     "card.title6": "Reducción de errores <br> y costos con BIM",
     "card.paragraph1": "Empresas data‑driven tienen 23 veces más probabilidades de adquirir clientes y 19 veces más de ser rentables",
-    "card.paragraph2": "Las empresas data‑driven logran un 4 % más de productividad y 6 % más de ganancias que el promedio",
-    "card.paragraph3": "El promedio de desempeño en proyectos fue del 73.8 %, mientras que organizaciones con programas de apoyo logran un 8.3 % adicional",
-    "card.paragraph4": "Las organizaciones 'champions' tienen un 92 % de éxito en proyectos, frente al 33 % de las sub‑performers",
+    "card.paragraph2": "Las empresas que adoptan IA y datos logran hasta 33% en productividad y reducciones de costos del 10-40 %, además de un +9 % en ingresos en casos concretos",
+    "card.paragraph3": "Organizaciones maduras en gestión de proyectos alcanzan:–29 % en fallos, +21 % en productividad, –26 % en costos, +37 % de alineamiento con objetivos, y además entregan más proyectos antes de plazo y bajo presupuesto",
+    "card.paragraph4": "Las organizaciones 'champions' logran un 92% de éxito en proyectos, frente a solo 33 % en las de bajo rendimiento ",
     "card.paragraph5": "La estrategia BIM‑LC aumentó la productividad en 12.9 %, mejoró la eficiencia laboral en 3.4 %, redujo costos en 8.07 % y acortó el proyecto en 11 días",
     "card.paragraph6": "BIM reduce errores de diseño en 50–60 %, pedidos de cambio en 32 %, costos por retrabajo en 40–50 %, y mejora tiempo de estimación y coordinación hasta en 80 %",
     //reutilizables
@@ -140,14 +257,51 @@ langBtn.addEventListener("click", () => {
 });
 
 function translatePage(lang) {
+  // Elementos normales con data-i18n
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     const translation = translations[lang][key];
+    if (translation) el.innerHTML = translation;
+  });
 
-    if (translation) {
-      el.innerHTML = translation; 
-    } else {
-      el.textContent = key;
+  // Dots que usan data-title
+  document.querySelectorAll(".dot-ancla").forEach(dot => {
+    const target = dot.getAttribute("data-target");
+    let key = "";
+    if (target === "#inicio") key = "nav.inicio";
+    if (target === "#services") key = "nav.services";
+    if (target === "#consultoria") key = "nav.consultoria";
+    if (target === "#ingenieria") key = "nav.ingenieria";
+    if (target === "#somos") key = "nav.somos";
+    if (target === "#contact") key = "nav.contact";
+
+    if (key && translations[lang][key]) {
+      dot.setAttribute("data-title", translations[lang][key]);
     }
   });
+
+  if (window.goToSlide) {
+  slidesData = getSlidesData(lang);
+
+  // mantener el slide activo
+  const activeIndex = document.querySelector(".service-btn.active")?.dataset.index || 0;
+  window.goToSlide(parseInt(activeIndex));
+  }
+
+
+  if (window.goToSlide2) {
+  slidesData2 = getSlidesData2(lang);
+
+  // mantener el slide activo
+  const activeIndex2 = document.querySelector(".service-btn.active")?.dataset.index || 0;
+  window.goToSlide2(parseInt(activeIndex2));
+  }
+
+  if (window.goToSlide3) {
+  slidesData3 = getSlidesData3(lang);
+
+  // mantener el slide activo
+  const activeIndex3 = document.querySelector(".service-btn.active")?.dataset.index || 0;
+  window.goToSlide3(parseInt(activeIndex3));
+  }
 }

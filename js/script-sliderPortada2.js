@@ -7,32 +7,21 @@ const dots2 = document.querySelectorAll(".dot2");
 
 
 // Contenido de cada slide
-const slidesData2 = [
-  {
-    title: "Planeamiento y control de proyectos (PMO)",
-    text: "Fortalecemos la gestión de proyectos a través de metodologías avanzadas que garantizan control en plazos, costos y recursos."
-  },
-  {
-    title: "Transformación digital",
-    text: "Guiamos a las organizaciones en la adopción de herramientas digitales y analíticas, asegurando un cambio ordenado y efectivo."
-  },
-  {
-    title: "Estrategia\ne-Commerce",
-    text: "Diseñamos planes para digitalizar negocios, aumentar ventas online y optimizar la experiencia de compra en PyMEs y empresas."
-  },
-  {
-    title: "Gestión de riesgos",
-    text: "Identificamos, evaluamos y mitigamos riesgos en proyectos y operaciones, minimizando impactos y asegurando continuidad."
-  },
-  {
-    title: "Evaluación financiera y de inversiones",
-    text: "Analizamos la viabilidad económica de proyectos y alternativas de inversión para apoyar decisiones sólidas y rentables."
-  },
-  {
-    title: "Roadmaps de innovación e inteligencia artificial",
-    text: "Construimos planes de adopción tecnológica que vinculan innovación, IA y estrategia empresarial con los objetivos del negocio."
-  }
-];
+
+
+
+let slidesData2 = getSlidesData2("es");
+
+function getSlidesData2(lang) {
+  return [
+    { title: translations[lang]["consulting.0.title"], text: translations[lang]["consulting.0.text"] },
+    { title: translations[lang]["consulting.1.title"], text: translations[lang]["consulting.1.text"] },
+    { title: translations[lang]["consulting.2.title"], text: translations[lang]["consulting.2.text"] },
+    { title: translations[lang]["consulting.3.title"], text: translations[lang]["consulting.3.text"] },
+    { title: translations[lang]["consulting.4.title"], text: translations[lang]["consulting.4.text"] },
+    { title: translations[lang]["consulting.5.title"], text: translations[lang]["consulting.5.text"] }
+  ];
+}
 
 function goToSlide2(index) {
   // Mueve el fondo en horizontal
@@ -67,6 +56,8 @@ function goToSlide2(index) {
   dots2.forEach(dot => dot.classList.remove("active"));
   dots2[index].classList.add("active");
 }
+
+window.goToSlide2 = goToSlide2; 
 
 // Eventos en botones
 buttons2.forEach(btn => {

@@ -569,6 +569,10 @@ img {
   display: inline-block;
 }
 
+#logoPortada {
+  transition: opacity 0.5s ease;
+}
+
 @media (max-width: 768px) {
   #logoPortada {
     max-width: 100px;

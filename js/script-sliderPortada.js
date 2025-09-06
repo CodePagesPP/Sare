@@ -6,28 +6,17 @@ const buttons = document.querySelectorAll(".service-btn");
 const dots = document.querySelectorAll(".dot");
 
 // Contenido de cada slide
-const slidesData = [
-  {
-    title: "Dashboards personalizados",
-    text: "Creamos tableros visuales adaptados a las necesidades de cada cliente, facilitando el seguimiento de KPIs clave y simplificando el análisis de información en tiempo real."
-  },
-  {
-    title: "Automatización de reportes",
-    text: "Reducimos el tiempo invertido en tareas repetitivas mediante reportes automáticos y dinámicos que aseguran información siempre actualizada y confiable."
-  },
-  {
-    title: "Integración de datos",
-    text: "Conectamos múltiples fuentes como ERP, Excel o plataformas de CRM en un solo sistema, logrando una visión unificada y precisa de la operación."
-  },
-  {
-    title: "Modelos predictivos",
-    text: "Aplicamos técnicas de machine learning y estadística para anticipar escenarios futuros y mejorar la planificación estratégica."
-  },
-  {
-    title: "Monitoreo digital de proyectos",
-    text: "Implementamos sistemas que permiten seguir en línea el avance de los proyectos, comparando metas planificadas con resultados reales."
-  }
-];
+let slidesData = getSlidesData("es");
+
+function getSlidesData(lang) {
+  return [
+    { title: translations[lang]["dashboard.0.title"], text: translations[lang]["dashboard.0.text"] },
+    { title: translations[lang]["dashboard.1.title"], text: translations[lang]["dashboard.1.text"] },
+    { title: translations[lang]["dashboard.2.title"], text: translations[lang]["dashboard.2.text"] },
+    { title: translations[lang]["dashboard.3.title"], text: translations[lang]["dashboard.3.text"] },
+    { title: translations[lang]["dashboard.4.title"], text: translations[lang]["dashboard.4.text"] },
+  ];
+}
 
 function goToSlide(index) {
   // Mueve el fondo en horizontal
@@ -63,6 +52,7 @@ function goToSlide(index) {
   dots[index].classList.add("active");
 }
 
+window.goToSlide = goToSlide; 
 // Eventos en botones
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
