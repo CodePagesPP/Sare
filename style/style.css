@@ -2921,6 +2921,10 @@ figure {
   line-height: 1.2em
 }
 
+.text-mont {
+  padding-top: 30px;
+}
+
 .title5 {
   letter-spacing: .1em;
   text-transform: uppercase;

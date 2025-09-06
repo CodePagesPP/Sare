@@ -25,10 +25,10 @@ const translations = {
 
     //SECCION SABIAS
     "sabias.title": "Did you know?",
-    "sabias.1": "Today, companies that apply People Analytics achieve more strategic decisions in talent management. The use of data in HR can reduce turnover, improve engagement, and optimize hiring processes.",
-    "sabias.2": "Financial analysis enhanced by BI enables companies to identify risks, anticipate scenarios, and better manage capital. The digitalization of accounting and investment information is key to financial sustainability.",
-    "sabias.3": "In increasingly competitive markets, understanding customer behavior is vital. Sales data analysis helps anticipate demand, personalize offers, and sustainably increase revenue.",
-    "sabias.4": "Digital transformation isn't just for large corporations. Retailers, restaurants, and factories can also improve their efficiency and competitiveness by integrating analytics and BI tools into their daily operations.",
+    "sabias.1": "89% of CFOs state that advanced analytics is essential because it allows them to anticipate scenarios, optimize resources, and make strategic decisions with greater accuracy, becoming a key tool for profitability and financial control.",
+    "sabias.2": "Companies that apply analytics in HR identify the causes of turnover and anticipate flight risks. This enables them to design more effective retention and development strategies. The result: up to 58% higher talent retention and lower replacement costs.",
+    "sabias.3": "Companies that apply customer analytics better understand market habits and needs. This allows them to personalize offers, improve the experience, and anticipate trends. They achieve up to 126% more profit compared to their competitors.",
+    "sabias.4": "SMEs that embrace digitalization optimize processes and eliminate repetitive tasks. This enables them to respond faster to customers and adapt more effectively to market changes. As a result, they can achieve up to 25% higher productivity in their operations.",
 
     //SECCION COMO TRABAJAMOS
     "trabajamos.title": "How do we work?",
@@ -55,12 +55,12 @@ const translations = {
     "card.title4": "Success rate of projects in 'champions'",
     "card.title5": "Benefits of BIM and <br> Lean in Construction",
     "card.title6": "Reducing errors <br> and costs with BIM",
-    "card.paragraph1": "Data-driven companies are 23 times more likely to acquire customers and 19 times more likely to be profitable.",
-    "card.paragraph2": "Data-driven companies achieve 4% more productivity and 6% more profit than average",
-    "card.paragraph3": "The average project performance was 73.8%, while organizations with support programs achieved an additional 8.3%.",
-    "card.paragraph4": "Champion organizations have a 92% project success rate, compared to 33% for underperformers.",
-    "card.paragraph5": "The BIM-LC strategy increased productivity by 12.9%, improved labor efficiency by 3.4%, reduced costs by 8.07%, and shortened the project by 11 days.",
-    "card.paragraph6": "BIM reduces design errors by 50–60%, change orders by 32%, rework costs by 40–50%, and improves estimating and coordination time by up to 80%.",
+    "card.paragraph1": "Data-driven companies are 23 times more likely to acquire customers and 19 times more likely to be profitable",
+    "card.paragraph2": "Companies that adopt AI and data achieve up to a 33% increase in productivity and 10–40% cost reductions, along with a +9% increase in revenue in specific cases",
+    "card.paragraph3": "Mature organizations in project management achieve: –29% fewer failures, +21% higher productivity, –26% lower costs, +37% better alignment with objectives, and they also deliver more projects ahead of schedule and under budget",
+    "card.paragraph4": "“Champion” organizations achieve a 92% project success rate, compared to only 33% in low-performing ones",
+    "card.paragraph5": "The BIM-LC strategy increased productivity by 12.9%, improved labor efficiency by 3.4%, reduced costs by 8.07%, and shortened the project by 11 days",
+    "card.paragraph6": "BIM reduces design errors by 50–60%, change orders by 32%, rework costs by 40–50%, and improves estimation and coordination time by up to 80%",
     //reutilizables
     "btn.contact": "Contact us",
   },
