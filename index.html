@@ -379,8 +379,20 @@
             <div class="container-w1 gutter-outside">
                 <div class="p-xl-start p-xl-end">
                     <div class="specs-wrapper">
-                        <div class="specs-image-wrapper">
-                            <img src="https://cdn.prod.website-files.com/63cf96b94c1db31c0bce9013/63cf96b94c1db34dd6ce9025_dimensions.svg" loading="lazy" alt="SION Technical Sepcs" class="specs-image"/>
+                        <div class="specs-image-wrapper" style="overflow: visible;">
+                            <div id="flow" class="flow-wrapper">
+                                
+                                <svg class="flow-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+                        
+                              
+                                <div class="step">Contact</div>
+                                <div class="step">Diagnosis</div>
+                                <div class="step">Findings</div>
+                                <div class="step">Value Proposition</div>
+                                <div class="step">Implementation</div>
+                                <div class="step">Delivery</div>
+                                <div class="step">Feedback</div>
+                            </div>
                         </div>
                         <div class="specs-cms-data-wrapper">
                             <div class="p-sm-end">
@@ -919,8 +931,8 @@
                 $('body').removeClass('overflow-hidden');
             });
         </script>
-        <script>
-            
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="./js/diagrama.js"></script>
+
     </body>
 </html>

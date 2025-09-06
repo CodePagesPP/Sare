@@ -151,6 +151,46 @@ summary {
 }
 
 
+.flow-wrapper{
+    position: relative;
+    width: min(860px, 95%);
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+  }
+  .flow-svg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .step{
+    width: min(780px, 92%);
+    border: 2px solid #2b2f3a;
+    color: #000000;
+    padding: 26px 36px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: clamp(18px, 2.6vw, 28px);
+    line-height: 1.2;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    transform: translateY(24px);
+    opacity: 0;
+    transition: transform .5s, opacity .5s, border-color .3s, box-shadow .3s;
+  }
+  .step.in{ transform: translateY(0); opacity: 1; }
+  .conn{
+    stroke: #000000;     
+    stroke-width: 3;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
 .hover-card {
   position: fixed;
   top: 0;
@@ -313,9 +353,7 @@ img {
   border: 0
 }
 
-svg:not(:root) {
-  overflow: hidden
-}
+
 
 hr {
   box-sizing: content-box;
