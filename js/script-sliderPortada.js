@@ -17,7 +17,7 @@ const slidesData = [
   },
   {
     title: "Integración de datos",
-    text: "Conectamos múltiples fuentes como ERP, Excel o CRM en un solo sistema, logrando una visión unificada y precisa de la operación."
+    text: "Conectamos múltiples fuentes como ERP, Excel o plataformas de CRM en un solo sistema, logrando una visión unificada y precisa de la operación."
   },
   {
     title: "Modelos predictivos",

@@ -16,7 +16,7 @@ const slidesData3 = [
     text: "Analizamos procesos para aumentar eficiencia, reducir tiempos y mejorar productividad."
   },
   {
-    title: "VDC, BIM y Lean Construction",
+    title: "VDC, BIM y\nLean Construction",
     text: "Aplicamos metodologías digitales y de mejora continua que elevan la calidad y reducen desperdicios."
   },
   {

@@ -5,6 +5,7 @@ const sliderContent2 = document.getElementById("sliderContent2");
 const buttons2 = document.querySelectorAll(".service-btn2");
 const dots2 = document.querySelectorAll(".dot2");
 
+
 // Contenido de cada slide
 const slidesData2 = [
   {
@@ -16,8 +17,8 @@ const slidesData2 = [
     text: "Guiamos a las organizaciones en la adopción de herramientas digitales y analíticas, asegurando un cambio ordenado y efectivo."
   },
   {
-    title: "Estrategia eCommerce",
-    text: "Diseñamos planes para digitalizar negocios, aumentar ventas online y optimizar la experiencia de compra en pymes y empresas."
+    title: "Estrategia\ne-Commerce",
+    text: "Diseñamos planes para digitalizar negocios, aumentar ventas online y optimizar la experiencia de compra en PyMEs y empresas."
   },
   {
     title: "Gestión de riesgos",
@@ -29,7 +30,7 @@ const slidesData2 = [
   },
   {
     title: "Roadmaps de innovación e inteligencia artificial",
-    text: "Construimos planes de adopción tecnológica que alinean innovación, IA y estrategia empresarial con objetivos de negocio."
+    text: "Construimos planes de adopción tecnológica que vinculan innovación, IA y estrategia empresarial con los objetivos del negocio."
   }
 ];
 

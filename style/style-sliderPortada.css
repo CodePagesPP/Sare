@@ -149,6 +149,14 @@
   z-index: 2;
 }
 
+#slideTitle2 {
+  white-space: pre-line; /* respeta los saltos de línea */
+}
+
+#slideTitle3 {
+  white-space: pre-line; /* respeta los saltos de línea */
+}
+
 .slider-content2 h2 {
   font-size: 4em;
   margin-bottom: 10px;
