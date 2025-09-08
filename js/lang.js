@@ -119,6 +119,18 @@ const translations = {
     "card.paragraph4": "“Champion” organizations achieve a 92% project success rate, compared to only 33% in low-performing ones",
     "card.paragraph5": "The BIM-LC strategy increased productivity by 12.9%, improved labor efficiency by 3.4%, reduced costs by 8.07%, and shortened the project by 11 days",
     "card.paragraph6": "BIM reduces design errors by 50–60%, change orders by 32%, rework costs by 40–50%, and improves estimation and coordination time by up to 80%",
+
+    //SCROLL FINAL
+    "scroll.title": "Mission",
+    "scroll.paragraph": "Empowering our clients to grow through innovation and modern methodologies that optimize processes, reduce costs, and enhance decision-making",
+    "scroll.title2": "Vision",
+    "scroll.paragraph2": "To be the leading strategic partner in Latin America for companies seeking to innovate, grow, and make data-driven decisions, driving a more efficient, competitive, and sustainable future.",
+    
+    //FOOTER
+
+    "contacta": "Contact",
+    "nosotros": "us",
+    "find": "Find us",
     //reutilizables
     "btn.contact": "Contact us",
   },
@@ -239,6 +251,17 @@ const translations = {
     "card.paragraph4": "Las organizaciones 'champions' logran un 92% de éxito en proyectos, frente a solo 33 % en las de bajo rendimiento ",
     "card.paragraph5": "La estrategia BIM‑LC aumentó la productividad en 12.9 %, mejoró la eficiencia laboral en 3.4 %, redujo costos en 8.07 % y acortó el proyecto en 11 días",
     "card.paragraph6": "BIM reduce errores de diseño en 50–60 %, pedidos de cambio en 32 %, costos por retrabajo en 40–50 %, y mejora tiempo de estimación y coordinación hasta en 80 %",
+
+    //SCROLL FINAL
+    "scroll.title": "Misión",
+    "scroll.paragraph": "Impulsar a nuestros clientes a crecer mediante innovación y metodologías modernas que optimizan procesos, reducen costos y potencian la toma de decisiones",
+    "scroll.title2": "Visión",
+    "scroll.paragraph2": "Ser el socio estratégico de referencia en América Latina para empresas que buscan innovar, crecer y tomar decisiones basadas en datos, impulsando un futuro más eficiente, competitivo y sostenible",
+    
+    //FOOTER
+    "contacta": "Contacta",
+    "nosotros": "con nosotros",
+    "find": "Encuéntranos",
     //reutilizables
     "btn.contact": "Contáctanos",
   }
