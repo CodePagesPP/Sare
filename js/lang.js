@@ -163,7 +163,7 @@ const translations = {
     "consulting.1.title": "Transformación digital",
     "consulting.1.text": "Guiamos a las organizaciones en la adopción de herramientas digitales y analíticas, asegurando un cambio ordenado y efectivo.",
 
-    "consulting.2.title": "Estrategia e-Commerce",
+    "consulting.2.title": "Estrategia\ne-Commerce",
     "consulting.2.text": "Diseñamos planes para digitalizar negocios, aumentar ventas online y optimizar la experiencia de compra en PyMEs y empresas.",
 
     "consulting.3.title": "Gestión de riesgos",
