@@ -257,12 +257,16 @@ langBtn.addEventListener("click", () => {
 });
 
 function translatePage(lang) {
-  // Elementos normales con data-i18n
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    const translation = translations[lang][key];
-    if (translation) el.innerHTML = translation;
-  });
+document.querySelectorAll("[data-i18n]").forEach(el => {
+  const key = el.getAttribute("data-i18n");
+  const translation = translations[lang][key];
+  
+  if (translation) {
+    const span = el.querySelector(".font-counter");
+    el.innerHTML = translation; 
+    if (span) el.appendChild(span); 
+  }
+});
 
   // Dots que usan data-title
   document.querySelectorAll(".dot-ancla").forEach(dot => {
