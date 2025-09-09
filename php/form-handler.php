@@ -30,19 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <td style='padding: 8px;'>$email</td>
                 </tr>
                 <tr>
-                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Name:</td>
+                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Nombre:</td>
                     <td style='padding: 8px;'>$nombre</td>
                 </tr>
                 <tr>
-                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Company:</td>
+                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Compañia:</td>
                     <td style='padding: 8px;'>$company</td>
                 </tr>
                 <tr>
-                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Phone:</td>
+                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Teléfono:</td>
                     <td style='padding: 8px;'>$telefono</td>
                 </tr>
                 <tr>
-                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Message:</td>
+                    <td style='padding: 8px; font-weight: bold; background: #f1f1f1;'>Mensaje:</td>
                     <td style='padding: 8px;'>$message</td>
                 </tr>
             </table>
@@ -69,6 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->addAddress($correoDestino);
 
         $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64';
         $mail->Subject = 'Nueva solicitud de contacto - Sare';
         $mail->Body    = $contenidoHTML;
 
