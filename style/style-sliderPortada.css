@@ -82,7 +82,7 @@
   cursor: pointer;
   font-size: 1.4em;
   transition: all 0.3s;
-  font-family: 'Designer';
+  font-family: 'Mont';
 }
 
 .service-btn:hover,
@@ -198,7 +198,7 @@
   cursor: pointer;
   font-size: 1.4em;
   transition: all 0.3s;
-  font-family: 'Designer';
+  font-family: 'Mont';
 }
 
 .service-btn2:hover,
@@ -306,7 +306,7 @@
   cursor: pointer;
   font-size: 1.4em;
   transition: all 0.3s;
-  font-family: 'Designer';
+  font-family: 'Mont';
 }
 
 .service-btn3:hover,
@@ -337,4 +337,16 @@
 
 .dot3.active {
   background: var(--principal1);
+}
+
+@media (max-width: 768px) {
+  .slider-section {
+    padding: 20px ;
+  }
+  .slider-section2 {
+    padding: 20px ;
+  }
+  .slider-section3 {
+    padding: 20px ;
+  }
 }

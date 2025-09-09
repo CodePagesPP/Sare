@@ -8,7 +8,7 @@ const translations = {
     "nav.contact": "Contact",
 
     //PORTADA
-    "portada.title1": "Transformation with innovation, backed by experience. We innovate in every strategic decision",
+    "portada.title1": "Transformation with innovation, backed by experience",
     "portada.title2": "We innovate in every strategic decision.",
     
     //SECCION SERVICIOS
