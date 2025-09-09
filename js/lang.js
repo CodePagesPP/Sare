@@ -88,6 +88,12 @@ const translations = {
     "sabias.3": "Companies that apply customer analytics better understand market habits and needs. This allows them to personalize offers, improve the experience, and anticipate trends. They achieve up to 126% more profit compared to their competitors.",
     "sabias.4": "SMEs that embrace digitalization optimize processes and eliminate repetitive tasks. This enables them to respond faster to customers and adapt more effectively to market changes. As a result, they can achieve up to 25% higher productivity in their operations.",
 
+    // imágenes en inglés
+    "sabias.1.img": "./assets/1en.jpg",
+    "sabias.2.img": "./assets/2en.jpg",
+    "sabias.3.img": "./assets/3en.jpg",
+    "sabias.4.img": "./assets/4en.jpg",
+
     //SECCION COMO TRABAJAMOS
     "trabajamos.title": "How do we work?",
     "trabajamos.title1": "Contact",
@@ -220,6 +226,12 @@ const translations = {
     "sabias.2": "El análisis financiero potenciado con Power BI permite a las empresas detectar riesgos, prever escenarios y gestionar mejor el capital. <br> La digitalización de la información contable y de inversiones es clave para la sostenibilidad financiera.",
     "sabias.3": "En mercados cada vez más competitivos, entender el comportamiento del cliente es vital. <br> El análisis de datos en ventas ayuda a anticipar demandas, personalizar ofertas y aumentar los ingresos de forma sostenible.",
     "sabias.4": "La transformación digital no es solo para grandes corporaciones. <br> Comercios, restaurantes y fábricas también pueden mejorar su eficiencia y competitividad al integrar herramientas de analítica y Power BI en su día a día.",
+
+    // imágenes en español
+    "sabias.1.img": "./assets/1.jpg",
+    "sabias.2.img": "./assets/2.jpg",
+    "sabias.3.img": "./assets/3.jpg",
+    "sabias.4.img": "./assets/4.jpg",
     
     //SECCION COMO TRABAJAMOS
     "trabajamos.title": "¿Cómo trabajamos?",
@@ -331,4 +343,11 @@ document.querySelectorAll("[data-i18n]").forEach(el => {
   const activeIndex3 = document.querySelector(".service-btn.active")?.dataset.index || 0;
   window.goToSlide3(parseInt(activeIndex3));
   }
+
+  // cambiar imágenes según idioma
+  document.querySelectorAll("[data-i18n-img]").forEach(img => {
+    const key = img.getAttribute("data-i18n-img");
+    const newSrc = translations[lang][key];
+    if (newSrc) img.setAttribute("src", newSrc);
+  });
 }
