@@ -792,22 +792,22 @@
                     <div class="grid_item footer-form">
                         <div class="div-block-12">
                             <div class="form-block w-form">
-                                <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get">
+                                <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" id="formulario" method="POST" action="php/form-handler.php">
                                     <div class="contact-form-grid">
                                         <div id="w-node-_7de2ee2a-78d6-b377-6fb1-3a0b18aeb26e-a6462c56" class="contact-text-wrapper">
-                                            <input type="text" class="text-field w-input" maxlength="256" name="First-Name-2" data-name="First Name 2" placeholder="Nombre" id="First-Name-2" required=""/>
+                                            <input type="text" class="text-field w-input" maxlength="256" data-name="First Name 2" placeholder="Nombre" name="nombre" id="First-Name-2" required=""/>
                                         </div>
                                         <div id="w-node-_7de2ee2a-78d6-b377-6fb1-3a0b18aeb270-a6462c56" class="contact-text-wrapper">
-                                            <input type="text" class="text-field w-input" maxlength="256" name="Last-Name-2" data-name="Last Name 2" placeholder="Compañía" id="Last-Name-2" required=""/>
+                                            <input type="text" class="text-field w-input" maxlength="256" data-name="Last Name 2" placeholder="Compañía" name="company" id="Last-Name-2" required=""/>
                                         </div>
                                         <div id="w-node-_7de2ee2a-78d6-b377-6fb1-3a0b18aeb272-a6462c56" class="contact-text-wrapper">
-                                            <input type="email" class="text-field w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="E-mail" id="Email-2" required=""/>
+                                            <input type="email" class="text-field w-input" maxlength="256"  data-name="Email 2" placeholder="E-mail" id="Email-2" name="email" required=""/>
                                         </div>
                                         <div id="w-node-_7de2ee2a-78d6-b377-6fb1-3a0b18aeb274-a6462c56" class="contact-text-wrapper">
-                                            <input type="tel" class="text-field w-input" maxlength="256" name="Contact-Phone-Number-2" data-name="Contact Phone Number 2" placeholder="Teléfono" id="Contact-Phone-Number-2"/>
+                                            <input type="tel" class="text-field w-input" maxlength="256"  data-name="Contact Phone Number 2" placeholder="Teléfono" name="telefono" id="Contact-Phone-Number-2"/>
                                         </div>
                                         <div id="w-node-_7de2ee2a-78d6-b377-6fb1-3a0b18aeb276-a6462c56" class="contact-text-wrapper">
-                                            <textarea data-name="Message 2" maxlength="5000" id="Message-2" name="Message-2" placeholder="Mensaje" required="" class="text-field w-input"></textarea>
+                                            <textarea data-name="Message 2" maxlength="5000" id="Message-2"  placeholder="Mensaje" name="message" required="" class="text-field w-input"></textarea>
                                         </div>
                                     </div>
                                     <input type="submit" 
@@ -818,12 +818,6 @@
                                     class="submit-button w-button"/>
                                     
                                 </form>
-                                <div class="w-form-done">
-                                    <div>Thank you! Your submission has been received!</div>
-                                </div>
-                                <div class="w-form-fail">
-                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                </div>
                             </div>
                         </div>
                     </div>
