@@ -185,3 +185,35 @@ document.querySelectorAll(".cell-content").forEach(card => {
 
   window.addEventListener("scroll", hideHoverCard, { passive: true });
 });
+
+
+document.getElementById("whatsappBtn").addEventListener("click", function(event) {
+   
+    event.preventDefault();
+
+  
+    window.open(this.href, "_blank");
+
+ 
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+});
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const logo = document.getElementById("logoPortada");
+
+  setTimeout(() => {
+   
+    logo.style.opacity = "0";
+
+   
+    setTimeout(() => {
+      logo.src = "./assets/logoblanco.png";
+      logo.style.opacity = "1";
+    }, 500);
+
+  }, 3600); 
+});

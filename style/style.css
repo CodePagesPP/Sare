@@ -4321,12 +4321,20 @@ figure {
   }
 
   .sunset-title-text {
-    font-size: 4.5em
+    font-size: 4em
+  }
+
+  #title-portada {
+    font-size: 3.5em;
+  }
+
+  #title-portada2 {
+    font-size: 3.5em;
   }
 
   .sunset-title-text .text{
   font-family: 'Mont'; 
-  font-size: 40px;
+  font-size: 35px;
 }
 
   .header-button.secondary {

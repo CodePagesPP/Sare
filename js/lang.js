@@ -9,7 +9,7 @@ const translations = {
 
     //PORTADA
     "portada.title1": "Transformation with innovation, backed by experience",
-    "portada.title2": "We innovate in every strategic decision.",
+    "portada.title2": "We innovate in every strategic decision",
     
     //SECCION SERVICIOS
     "services.title": "Services",
@@ -142,8 +142,8 @@ const translations = {
     "nav.somos": "¿Quiénes somos?",
     "nav.contact": "Contacto",
     //PORTADA
-    "portada.title1": "Transformación con innovación, respaldada con experiencia.",
-    "portada.title2": "Innovamos en cada decisión estratégica.",
+    "portada.title1": "Transformación con innovación, respaldada con experiencia",
+    "portada.title2": "Innovamos en cada decisión estratégica",
 
     //SECCION SERVICIOS
     "services.title": "Servicios",
