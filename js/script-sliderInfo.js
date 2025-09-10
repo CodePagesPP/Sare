@@ -5,12 +5,12 @@ const wrapper = document.querySelector('.slider-wrapper');
 const cards = document.querySelectorAll('.card');
 
 let cardWidth;
-let currentIndex = 0; // 👈 índice de la card visible
 
 function updateCardWidth() {
   if (!cards.length) return;
 
   if (window.innerWidth <= 768) {
+    // en mobile ocupa todo el ancho del slider
     cardWidth = slider.getBoundingClientRect().width;
   } else {
     const style = window.getComputedStyle(wrapper);
@@ -23,15 +23,24 @@ updateCardWidth();
 window.addEventListener('resize', updateCardWidth);
 
 btnRight.addEventListener('click', () => {
-  if (currentIndex < cards.length - 1) {
-    currentIndex++;
-    slider.scrollTo({ left: currentIndex * cardWidth, behavior: 'smooth' });
+  const maxScroll = wrapper.scrollWidth - slider.clientWidth; // límite derecho
+  let newScroll = slider.scrollLeft + cardWidth;
+
+  // si me paso del final, fuerzo el scroll al máximo
+  if (newScroll > maxScroll - 5) {
+    newScroll = maxScroll;
   }
+
+  slider.scrollTo({ left: newScroll, behavior: 'smooth' });
 });
 
 btnLeft.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    slider.scrollTo({ left: currentIndex * cardWidth, behavior: 'smooth' });
+  let newScroll = slider.scrollLeft - cardWidth;
+
+  // si me paso del inicio, fuerzo a 0
+  if (newScroll < 5) {
+    newScroll = 0;
   }
+
+  slider.scrollTo({ left: newScroll, behavior: 'smooth' });
 });

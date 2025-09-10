@@ -84,10 +84,21 @@
       width: -webkit-fill-available;
     font-size: 1vw;
     z-index: 10000;
-
   font-size: 1vw;
   line-height: 20px;
   font-weight: 500;
+}
+
+@media(max-width: 768px){
+  #contact {
+      width: -webkit-fill-available;
+    font-size: 1vw;
+    z-index: 10000;
+  overflow-y: auto;
+  font-size: 1vw;
+  line-height: 20px;
+  font-weight: 500;
+}
 }
 
 .line-terms {
@@ -268,7 +279,7 @@
 }
 
 .container.footer {
-  padding: 4em 12em 4em;
+  padding: 2em 12em 4em;
 }
 
 .checkbox-field {
@@ -333,6 +344,7 @@
   bottom: 0px;
   z-index: 1;
   overflow: visible;
+  height: -webkit-fill-available;
   background: url(https://assets.website-files.com/6170167a7b5ce6345a462c55/61869c8836829ab3793d2e01_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,7 +423,7 @@
 
 .div-block-12 {
   position: relative;
-  padding-bottom: 8em;
+  padding-bottom: 6em;
 }
 
 .submit-button {
@@ -589,6 +601,7 @@
 
   .grid_item.footer-logo {
     padding-bottom: 7em;
+    padding-top: 2em;
   }
 
   .grid_item.is--50.footer-1 {
