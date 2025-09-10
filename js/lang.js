@@ -136,7 +136,14 @@ const translations = {
 
     "contacta": "Contact us",
     "find": "Find us",
-    "correo": "Email: contact@sarecorp.com",
+    "correo": "E-mail: contact@sarecorp.com",
+    "form.name": "Name",
+    "form.company": "Company",
+    "form.email": "E-mail",
+    "form.phone": "Phone",
+    "form.message": "Message",
+    "form.submit": "Send Message",
+    "form.wait": "Please wait...",
     //reutilizables
     "btn.contact": "Contact us",
   },
@@ -274,6 +281,13 @@ const translations = {
     "contacta": "Contacta\n con nosotros",
     "find": "Encuéntranos",
     "correo": "Correo: contacto@sarecorp.com",
+    "form.name": "Nombre",
+    "form.company": "Compañía",
+    "form.email": "E-mail",
+    "form.phone": "Teléfono",
+    "form.message": "Mensaje",
+    "form.submit": "Enviar Mensaje",
+    "form.wait": "Por favor espera...",
     //reutilizables
     "btn.contact": "Contáctanos",
   }
@@ -349,5 +363,26 @@ document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = img.getAttribute("data-i18n-img");
     const newSrc = translations[lang][key];
     if (newSrc) img.setAttribute("src", newSrc);
+  });
+
+    // Cambiar atributos "value" (para botones)
+  document.querySelectorAll("[data-i18n-value]").forEach(el => {
+    const key = el.getAttribute("data-i18n-value");
+    const translation = translations[lang][key];
+    if (translation) el.value = translation;
+  });
+
+  // Cambiar atributos "data-wait"
+  document.querySelectorAll("[data-i18n-wait]").forEach(el => {
+    const key = el.getAttribute("data-i18n-wait");
+    const translation = translations[lang][key];
+    if (translation) el.setAttribute("data-wait", translation);
+  });
+
+    // Cambiar placeholders
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const translation = translations[lang][key];
+    if (translation) el.setAttribute("placeholder", translation);
   });
 }
