@@ -129,7 +129,7 @@
   z-index: 1;
   display: block;
   width: 100%;
-  padding: 1.04em;
+  padding: 1.4em;
 }
 
 .grid_item.footer-text-mobile {
@@ -178,7 +178,7 @@
   padding-left: 5em;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .grid_item.footer-social-mobile {
@@ -255,7 +255,7 @@
   flex-direction: column;
   font-size: 69px;
   line-height: 1.4;
-  white-space: nowrap;
+  white-space: pre-line;
 }
 
 .container {
@@ -609,12 +609,17 @@
   .grid_item.footer-social-mobile {
     display: block;
     width: 100%;
-    padding-top: 5em;
+    padding-top: 0;
     padding-bottom: 5em;
   }
 
   .grid_item.footer-social {
     display: none;
+  }
+
+  .footer-correos {
+    padding-bottom: 15px;
+    font-size: 15px;
   }
 
   .image-footer {

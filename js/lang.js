@@ -134,8 +134,7 @@ const translations = {
     
     //FOOTER
 
-    "contacta": "Contact",
-    "nosotros": "us",
+    "contacta": "Contact us",
     "find": "Find us",
     //reutilizables
     "btn.contact": "Contact us",
@@ -217,7 +216,7 @@ const translations = {
     "engineering.5.title": "Estudios de productividad y eficiencia en campo",
     "engineering.5.text": "Realizamos evaluaciones directas en operaciones que permiten identificar cuellos de botella y proponer mejoras inmediatas.",
     //SECCION QUIENES SOMOS
-    "somos.title": "¿Quiénes somos?",
+    "somos.title": "¿Quiénes\nsomos?",
     "somos.paragraph":"En SARE acompañamos a empresas de distintos sectores en la gestión de proyectos y en su transformación hacia modelos más eficientes e innovadores. <br> A través de consultoría, ingeniería y servicios digitales ayudamos a optimizar procesos y a convertir información en decisiones estratégicas para generar valor sostenible.",
 
     //SECCION SABIAS
@@ -271,8 +270,7 @@ const translations = {
     "scroll.paragraph2": "Ser el socio estratégico de referencia en América Latina para empresas que buscan innovar, crecer y tomar decisiones basadas en datos, impulsando un futuro más eficiente, competitivo y sostenible",
     
     //FOOTER
-    "contacta": "Contacta",
-    "nosotros": "con nosotros",
+    "contacta": "Contacta\n con nosotros",
     "find": "Encuéntranos",
     //reutilizables
     "btn.contact": "Contáctanos",

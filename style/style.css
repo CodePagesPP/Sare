@@ -2959,7 +2959,8 @@ figure {
 }
 
 .p-xxxs-start {
-  padding-top: .5em
+  padding-top: .5em;
+  white-space: pre-line
 }
 
 .p-xxxs-end {
@@ -4094,7 +4095,8 @@ figure {
   }
 
   .p-sm-end {
-    padding-bottom: 2.3em
+    padding-bottom: 2.3em;
+    white-space: pre-line;
   }
 
   .infotext {
