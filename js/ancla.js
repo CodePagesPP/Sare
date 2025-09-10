@@ -1,9 +1,27 @@
 const dotsancla = document.querySelectorAll('.nav-dots .dot-ancla');
 const indicator = document.querySelector('.nav-dots .indicator');
-
+const navDots = document.querySelector('.nav-dots');
 function moveIndicator(element) {
   const offsetTop = element.offsetTop;
   indicator.style.top = `${offsetTop - 4}px`;
+}
+
+
+if (window.innerWidth <= 768) {
+  let scrollTimeout;
+
+  window.addEventListener('scroll', () => {
+    
+    navDots.style.opacity = '0';
+    navDots.style.transition = 'opacity 0.3s ease';
+
+    
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      
+      navDots.style.opacity = '1';
+    }, 300); 
+  });
 }
 
 

@@ -58,6 +58,7 @@ summary {
   align-items: center;
   gap: 25px;
   z-index: 10000;
+  transition: opacity 0.3s ease;
 }
 
 .nav-dots .dot-ancla {
