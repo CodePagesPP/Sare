@@ -358,4 +358,7 @@
   .service-btn.active {
     background: rgb(105, 105, 105, .95);
   }
+  #slideTitle3 {
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.63);
+  }
 }

@@ -34,6 +34,13 @@ function goToSlide3(index) {
     slideTitle3.textContent = slidesData3[index].title;
     slideText3.textContent = slidesData3[index].text;
 
+    // 👇 Aquí controlamos el stroke SOLO para el slide 0
+    if (index === 0 && window.innerWidth <= 768) {
+      slideTitle3.style.webkitTextStroke = "1.5px rgba(0,0,0,0.63)";
+    } else {
+      slideTitle3.style.webkitTextStroke = "unset";
+    }
+
     // Reaparece con animación
     slideTitle3.classList.remove("fade-out");
     slideText3.classList.remove("fade-out");
@@ -54,6 +61,7 @@ function goToSlide3(index) {
   dots3.forEach(dot => dot.classList.remove("active"));
   dots3[index].classList.add("active");
 }
+
 
 
 window.goToSlide3 = goToSlide3;
