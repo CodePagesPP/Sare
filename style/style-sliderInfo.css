@@ -17,20 +17,19 @@
   display: none; /* Chrome, Safari, Edge */
 }
 
-/* Nuevo wrapper */
-/* Wrapper dinámico */
+/* Wrapper */
 .slider-wrapper {
   display: flex;
   gap: 20px;
   overflow: visible;
-  width: max-content; /* 👈 ahora se adapta a sus hijos */
+  width: max-content;
 }
 
-/* Card responsive */
+/* Cards */
 .card {
   flex: 0 0 auto;
-  width: clamp(250px, 80vw, 440px); /* 👈 mínimo 250px, máximo 440px */
-  height: clamp(320px, 60vw, 515px); /* altura flexible */
+  width: clamp(250px, 80vw, 440px); /* Desktop & tablet */
+  height: clamp(320px, 60vw, 515px);
   margin: 0 10px;
   background: #222;
   border-radius: 20px;
@@ -44,6 +43,9 @@
   transform: perspective(1000px) translateZ(10px) scale(1.05);
   z-index: 10;
 }
+
+
+
 
 /* Imagen */
 .card img {
@@ -122,5 +124,9 @@
   .overlay {
     font-size: 1rem;
     padding: 10px;
+  }
+
+  .btn {
+    padding: 12px 15px;
   }
 }

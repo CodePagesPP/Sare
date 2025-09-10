@@ -9,11 +9,14 @@ let cardWidth;
 function updateCardWidth() {
   if (!cards.length) return;
 
-  const style = window.getComputedStyle(wrapper);
-  const gap = parseInt(style.columnGap || style.gap) || 0;
-
-  // ancho exacto de la tarjeta (ya centrada en móvil) + gap
-  cardWidth = cards[0].getBoundingClientRect().width + gap;
+  if (window.innerWidth <= 768) {
+    // en mobile ocupa todo el ancho del slider
+    cardWidth = slider.getBoundingClientRect().width;
+  } else {
+    const style = window.getComputedStyle(wrapper);
+    const gap = parseInt(style.columnGap || style.gap) || 0;
+    cardWidth = cards[0].getBoundingClientRect().width + gap;
+  }
 }
 
 updateCardWidth();
