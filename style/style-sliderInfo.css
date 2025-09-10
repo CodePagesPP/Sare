@@ -18,29 +18,31 @@
 }
 
 /* Nuevo wrapper */
+/* Wrapper dinámico */
 .slider-wrapper {
   display: flex;
   gap: 20px;
-  overflow: visible; /* 👈 aquí se permite que las cards se expandan */;
-  width: 1920px;
+  overflow: visible;
+  width: max-content; /* 👈 ahora se adapta a sus hijos */
 }
 
+/* Card responsive */
 .card {
   flex: 0 0 auto;
-  width: 440px;
-  height: 515px;
+  width: clamp(250px, 80vw, 440px); /* 👈 mínimo 250px, máximo 440px */
+  height: clamp(320px, 60vw, 515px); /* altura flexible */
   margin: 0 10px;
   background: #222;
   border-radius: 20px;
-  overflow: hidden; /* mantiene la imagen contenida */
+  overflow: hidden;
   position: relative;
   transition: transform 0.4s ease;
-  transform: perspective(1000px) translateZ(0); /* base */
+  transform: perspective(1000px) translateZ(0);
 }
 
 .card:hover {
-  transform: perspective(1000px) translateZ(10px) scale(1.1); /* efecto 3D zoom */
-  z-index: 10; /* se superpone sobre las otras */
+  transform: perspective(1000px) translateZ(10px) scale(1.05);
+  z-index: 10;
 }
 
 /* Imagen */
@@ -66,14 +68,25 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.2rem;
-  padding: 0 40px;
-  line-height: 30px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem); /* 👈 texto fluido */
+  padding: 0 20px;
+  line-height: 1.5;
   transition: all 0.4s ease;
 }
 
 .card:hover .overlay {
   bottom: 0;
+}
+
+/* Slider */
+.slider {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 20px 5%;
+}
+.slider::-webkit-scrollbar {
+  display: none;
 }
 
 /* Botones */
@@ -98,4 +111,16 @@
 
 .btn:hover {
   box-shadow: 2px 4px 6px -1px rgba(85, 85, 85, 0.59), -4px -4px 9px -1px rgba(58, 58, 58, 0.77);
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    height: auto; /* más natural en móviles */
+  }
+  .overlay {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }
