@@ -732,7 +732,7 @@
                         selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
                     },
                     xValue: -10, 
-                    yValue: 35,
+                    yValue: (window.innerWidth <= 768 ? 23 : 35),
                     xUnit: "vw",
                     yUnit: "vh",
                     zUnit: "PX"
