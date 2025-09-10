@@ -4,11 +4,11 @@ const translations = {
     "nav.services": "Services",
     "nav.consultoria": "Consulting",
     "nav.ingenieria": "Engineering",
-    "nav.somos": "Who we are?",
+    "nav.somos": "Who are we?",
     "nav.contact": "Contact",
 
     //PORTADA
-    "portada.title1": "Transformation with innovation, backed by experience",
+    "portada.title1": "Transformation through innovation, backed by experience",
     "portada.title2": "We innovate in every strategic decision",
     
     //SECCION SERVICIOS
@@ -78,8 +78,8 @@ const translations = {
 
 
     //SECCION QUIENES SOMOS
-    "somos.title": "Who we are?",
-    "somos.paragraph":"At SARE we accompany companies from different sectors in project management and in their transformation towards more efficient and innovative models. Through consulting, engineering and digital services we help to turn information into strategic decisions, optimize processes and generate sustainable value with confidence.",
+    "somos.title": "Who are we?",
+    "somos.paragraph":"At SARE, we support companies from different sectors in project management and in their transformation toward more efficient and innovative models. Through consulting, engineering, and digital services, we help optimize processes and turn information into strategic decisions that generate sustainable value.",
 
     //SECCION SABIAS
     "sabias.title": "Did you know?",
@@ -128,9 +128,9 @@ const translations = {
 
     //SCROLL FINAL
     "scroll.title": "Mission",
-    "scroll.paragraph": "Empowering our clients to grow through innovation and modern methodologies that optimize processes, reduce costs, and enhance decision-making",
+    "scroll.paragraph": "To drive our clients’ growth through innovation and modern methodologies that optimize processes, reduce costs, and enhance decision-making",
     "scroll.title2": "Vision",
-    "scroll.paragraph2": "To be the leading strategic partner in Latin America for companies seeking to innovate, grow, and make data-driven decisions, driving a more efficient, competitive, and sustainable future.",
+    "scroll.paragraph2": "To be the strategic reference partner in Latin America for companies seeking to innovate, grow, and make data-driven decisions, fostering a more efficient, competitive, and sustainable future",
     
     //FOOTER
 
