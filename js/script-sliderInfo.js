@@ -23,11 +23,16 @@ updateCardWidth();
 window.addEventListener('resize', updateCardWidth);
 
 btnRight.addEventListener('click', () => {
-  const maxScroll = wrapper.scrollWidth - slider.clientWidth; // límite derecho
+  const totalCards = cards.length;
+  const visibleCards = Math.floor(slider.clientWidth / cardWidth);
+  const maxIndex = totalCards - visibleCards;
+
   let newScroll = slider.scrollLeft + cardWidth;
 
-  // si me paso del final, fuerzo el scroll al máximo
-  if (newScroll > maxScroll - 5) {
+  // corregimos con Math.round para evitar píxeles sobrantes
+  const maxScroll = Math.round(maxIndex * cardWidth);
+
+  if (newScroll > maxScroll) {
     newScroll = maxScroll;
   }
 
@@ -37,10 +42,10 @@ btnRight.addEventListener('click', () => {
 btnLeft.addEventListener('click', () => {
   let newScroll = slider.scrollLeft - cardWidth;
 
-  // si me paso del inicio, fuerzo a 0
-  if (newScroll < 5) {
+  if (newScroll < 0) {
     newScroll = 0;
   }
 
   slider.scrollTo({ left: newScroll, behavior: 'smooth' });
 });
+
