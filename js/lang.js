@@ -136,6 +136,7 @@ const translations = {
 
     "contacta": "Contact us",
     "find": "Find us",
+    "correo": "Email: contact@sarecorp.com",
     //reutilizables
     "btn.contact": "Contact us",
   },
@@ -272,6 +273,7 @@ const translations = {
     //FOOTER
     "contacta": "Contacta\n con nosotros",
     "find": "Encuéntranos",
+    "correo": "Correo: contacto@sarecorp.com",
     //reutilizables
     "btn.contact": "Contáctanos",
   }
