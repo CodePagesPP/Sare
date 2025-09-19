@@ -141,6 +141,7 @@
   display: block;
   width: 100%;
   padding: 1.4em;
+  padding-bottom: 0;
 }
 
 .grid_item.footer-text-mobile {
@@ -182,14 +183,12 @@
 }
 
 .grid_item.footer-text {
-  display: flex;
   width: 60%;
   padding-top: 0em;
   padding-bottom: 0em;
-  padding-left: 5em;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .grid_item.footer-social-mobile {
@@ -317,7 +316,9 @@
   color: #fff;
   font-size: 13px;
   font-weight: 300;
+  margin-bottom: 20px;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .gradient-top {
@@ -427,7 +428,6 @@
 }
 
 .submit-button {
-  position: absolute;
   left: auto;
   top: auto;
   right: 0%;
@@ -469,6 +469,31 @@
 .footer-terms-span {
   color: #fff;
   text-decoration: none;
+}
+
+.form-privacy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.privacy {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.privacytext {
+  text-decoration: underline;
+  color: white;
+}
+
+.btn-privacy {
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #054D61;
+  padding: 8px;
 }
 
 @media screen and (max-width: 991px) {
