@@ -675,70 +675,133 @@
         }]
     },
     {
-        keyframe: 83, actionItems: [{
-            id: "a-25-n-25", actionTypeId: "TRANSFORM_SCALE",
-            config: {
-                delay: 0, easing: "", duration: 500,
-                target: {
-                    useEventTarget: "CHILDREN", selector: ".sunset-image-wrap",
-                    selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776f"]
-                },
-                xValue: 1, yValue: 1, locked: !0
-            }
+  keyframe: 83,
+  actionItems: [
+    {
+      id: "a-25-n-25",
+      actionTypeId: "TRANSFORM_SCALE",
+      config: {
+        delay: 0,
+        easing: "",
+        duration: 500,
+        target: {
+          useEventTarget: "CHILDREN",
+          selector: ".sunset-image-wrap",
+          selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776f"]
         },
-        {
-            id: "a-25-n-26", actionTypeId: "TRANSFORM_MOVE",
-            config: {
-                delay: 0, easing: "", duration: 500,
-                target: {
-                    useEventTarget: "CHILDREN",
-                    selector: ".sunset-image-wrap",
-                    selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776f"]
-                },
-                xValue: 0, yValue: 0, xUnit: "vw", yUnit: "vh", zUnit: "PX"
-            }
+        xValue: 1,
+        yValue: 1,
+        locked: !0
+      }
+    },
+    {
+      id: "a-25-n-26",
+      actionTypeId: "TRANSFORM_MOVE",
+      config: {
+        delay: 0,
+        easing: "",
+        duration: 500,
+        target: {
+          useEventTarget: "CHILDREN",
+          selector: ".sunset-image-wrap",
+          selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776f"]
         },
-        {
-            id: "a-25-n-27", actionTypeId: "TRANSFORM_SCALE",
-            config: {
-                delay: 0, easing: "", duration: 500,
-                target: {
-                    useEventTarget: "CHILDREN", selector: ".sunset-sun",
-                    selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
-                },
-                xValue: 0, yValue: 0, locked: !0
-            }
-        }, {
-            id: "a-25-n-28", actionTypeId: "STYLE_OPACITY",
-            config: {
-                delay: 0, easing: "", duration: 500,
-                target: {
-                    useEventTarget: "CHILDREN", selector: ".sunset-sun",
-                    selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
-                },
-                value: 0, unit: ""
-            }
+        xValue: 0,
+        yValue: 0,
+        xUnit: "vw",
+        yUnit: "vh",
+        zUnit: "PX"
+      }
+    },
+    {
+      id: "a-25-n-27",
+      actionTypeId: "TRANSFORM_SCALE",
+      config: {
+        delay: 0,
+        easing: "",
+        duration: 500,
+        target: {
+          useEventTarget: "CHILDREN",
+          selector: ".sunset-sun",
+          selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
         },
-            {
-                id: "a-25-n-XX",
-                actionTypeId: "TRANSFORM_MOVE",
-                config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                        useEventTarget: "CHILDREN",
-                        selector: ".sunset-sun",
-                        selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
-                    },
-                    xValue: -10, 
-                    yValue: 35,
-                    xUnit: "vw",
-                    yUnit: "vh",
-                    zUnit: "PX"
-                }
+        xValue: 0,
+        yValue: 0,
+        locked: !0
+      }
+    },
+    {
+      id: "a-25-n-28",
+      actionTypeId: "STYLE_OPACITY",
+      config: {
+        delay: 0,
+        easing: "",
+        duration: 500,
+        target: {
+          useEventTarget: "CHILDREN",
+          selector: ".sunset-sun",
+          selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
+        },
+        value: 0,
+        unit: ""
+      }
+    },
+    {
+      id: "a-25-n-XX",
+      actionTypeId: "TRANSFORM_MOVE",
+      config: (function () {
+        const sun = document.querySelector(".sunset-sun");
+        const targetImg = document.querySelector(".footer-logo img");
+
+        if (sun && targetImg) {
+          const sunRect = sun.getBoundingClientRect();
+          const targetRect = targetImg.getBoundingClientRect();
+
+          // Calcular delta entre centro del sol y centro de la imagen
+          const targetX =
+            (targetRect.left + targetRect.width / 2) -
+            (sunRect.left + sunRect.width / 2);
+          const targetY =
+            (targetRect.top + targetRect.height / 2) -
+            (sunRect.top + sunRect.height / 2);
+
+          return {
+            delay: 0,
+            easing: "",
+            duration: 500,
+            target: {
+              useEventTarget: "CHILDREN",
+              selector: ".sunset-sun",
+              selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
+            },
+            xValue: targetX,
+            yValue: targetY,
+            xUnit: "px",
+            yUnit: "px",
+            zUnit: "PX"
+          };
+        }
+
+        // fallback si no encuentra elementos
+        return {
+          delay: 0,
+          easing: "",
+          duration: 500,
+          target: {
+            useEventTarget: "CHILDREN",
+            selector: ".sunset-sun",
+            selectorGuids: ["4678e772-e01f-8075-a38b-723f28d4776c"]
+          },
+          xValue: -10,
+          yValue: 35,
+          xUnit: "vw",
+          yUnit: "vh",
+          zUnit: "PX"
+        };
+      })()
+    }
+  ]
 }]
-    }]
 }], createdOn: 0x185e93d7a1a
 },
     "a-26": {
