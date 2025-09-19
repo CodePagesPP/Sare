@@ -670,7 +670,7 @@
   }
 
   .grid.is--final-coypright {
-    padding-top: 14em;
+    padding-top: 3em;
   }
 
   .link-block-3 {
@@ -732,6 +732,22 @@
     display: flex;
     align-items: center;
   }
+
+  .form-privacy {
+  margin-top: 30px;
+  display: block;
+  font-size: 3.2em;
+  justify-content: space-between;
+}
+
+.privacy {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.find-us {
+  margin-top: 25px;
+}
 }
 
 #w-node-_7de2ee2a-78d6-b377-6fb1-3a0b18aeb276-a6462c56 {
